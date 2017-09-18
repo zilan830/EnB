@@ -99,33 +99,33 @@ const column = [
 //洗地机
 const washColumn = [
   {
-    name: "百洁垫",
+    name: "buffer pad",
     imgPath: bj1,
     key: "bj",
     selected: true
   },
   {
-    name: "洗地刷",
+    name: "brush",
     imgPath: supplies3,
     key: "xd"
   },
   {
-    name: "针盘",
+    name: "pad driver",
     imgPath: supplies7,
     key: "zp"
   },
   {
-    name: "刷盘电机",
+    name: "brush motor",
     imgPath: supplies2,
     key: "sp"
   },
   {
-    name: "吸水电机",
+    name: "vacuum motor",
     imgPath: supplies5,
     key: "xs"
   },
   {
-    name: "胶条",
+    name: "rubber",
     imgPath: supplies4,
     key: "jt"
   }
@@ -133,13 +133,13 @@ const washColumn = [
 //扫地机
 const rubColumn = [
   {
-    name: "边刷",
+    name: "side brush",
     imgPath: supplies8,
     key: "bs",
     selected: true
   },
   {
-    name: "滚刷",
+    name: "central brush",
     imgPath: supplies9,
     key: "gs"
   }
@@ -147,33 +147,33 @@ const rubColumn = [
 //擦地机
 const sweepColumn = [
   {
-    name: "手套柄",
+    name: "handle grip",
     imgPath: sb1,
     key: "sb",
     selected: true
   },
   {
-    name: "缓冲器",
+    name: "bumper",
     imgPath: hc1,
     key: "hc"
   },
   {
-    name: "轮子",
+    name: "wheel",
     imgPath: lz1,
     key: "lz"
   },
   {
-    name: "地刷",
+    name: "hard brush",
     imgPath: ds2,
     key: "ds"
   },
   {
-    name: "针盘",
+    name: "pad driver",
     imgPath: zp4,
     key: "cdzp"
   },
   {
-    name: "毯刷",
+    name: "soft brush",
     imgPath: ts1,
     key: "ts"
   }
@@ -183,25 +183,25 @@ const bjColumn = [
   {
     photo: bj1,
     type: "",
-    size: "13寸",
+    size: "13 size",
     auto: "Hussar 660B、Ranger 660B、Clever 660BT"
   },
   {
     photo: bj1,
     type: "",
-    size: "15寸",
+    size: "15 size",
     auto: "Hussar 760B"
   },
   {
     photo: bj1,
     type: "",
-    size: "17寸",
+    size: "17 size",
     auto: "Hussar 860B、Smart 450B、Smart 450E"
   },
   {
     photo: bj1,
     type: "",
-    size: "20寸",
+    size: "20 size",
     auto: "Ranger 510B、Smart 510B、Clever 510B、Clever 510E、Clever 510BT"
   }
 ];
@@ -224,31 +224,31 @@ const xdColumn = [
   {
     photo: xd1,
     type: "242071",
-    size: "13寸",
+    size: "13 size",
     auto: "Hussar 660B、Ranger 660B、Clever 660BT"
   },
   {
     photo: xd1,
     type: "242081",
-    size: "15寸",
+    size: "15 size",
     auto: "Hussar 760B"
   },
   {
     photo: xd3,
     type: "242091",
-    size: "17寸",
+    size: "17 size",
     auto: "Hussar 860B"
   },
   {
     photo: xd4,
     type: "805653",
-    size: "17寸",
+    size: "17 size",
     auto: "Smart 450B、Smart 450E"
   },
   {
     photo: xd5,
     type: "242041",
-    size: "20寸",
+    size: "20 size",
     auto: "Ranger 510B、Smart 510B、Clever 510B、Clever 510E、Clever 510BT"
   }
 ];
@@ -256,71 +256,71 @@ const jtColumn = [
   {
     photo: jt1,
     type: "880753/880752/880750",
-    size: "前/中/后",
-    property: "普通",
+    size: "before/middle/after",
+    property: "normal",
     auto: "Smart 450B"
   },
   {
     photo: jt2,
     type: "880753/880751/880750",
-    size: "前/中/后",
-    property: "耐油",
+    size: "before/middle/after",
+    property: "oil resistant",
     auto: "Smart 450B"
   },
   {
     photo: jt1,
     type: "880753/250241/880750",
-    size: "前/中/后",
-    property: "普通",
+    size: "before/middle/after",
+    property: "normal",
     auto: "Smart 510B、Clever 510B、Clever 510BT"
   },
   {
     photo: jt2,
     type: "880753/250231/880750",
-    size: "前/中/后",
-    property: "耐油",
+    size: "before/middle/after",
+    property: "oil resistant",
     auto: "Smart 510B、Clever 510B、Clever 510BT"
   },
   {
     photo: jt1,
     type: "860706/050201/860707",
-    size: "前/中/后",
-    property: "普通",
+    size: "before/middle/after",
+    property: "normal",
     auto: "Clever 660BT"
   },
   {
     photo: jt2,
     type: "860706/250321/860707",
-    size: "前/中/后",
-    property: "耐油",
+    size: "before/middle/after",
+    property: "oil resistant",
     auto: "Clever 660BT"
   },
   {
     photo: jt7,
     type: "250341/250351",
-    size: "前/后",
-    property: "普通",
+    size: "before/after",
+    property: "normal",
     auto: "Ranger 660B,510B"
   },
   {
     photo: jt8,
     type: "250341/250361",
-    size: "前/后",
-    property: "耐油",
+    size: "before/after",
+    property: "oil resistant",
     auto: "Ranger 660B,510B"
   },
   {
     photo: jt7,
     type: "250381/250391",
-    size: "前/后",
-    property: "普通",
+    size: "before/after",
+    property: "normal",
     auto: "Hussar 660,760,860"
   },
   {
     photo: jt8,
     type: "250381/250401",
-    size: "前/后",
-    property: "耐油",
+    size: "before/after",
+    property: "oil resistant",
     auto: "Hussar 660,760,860"
   }
 ];
@@ -362,31 +362,31 @@ const zpColumn = [
   {
     photo: zp1,
     type: "240091",
-    size: "13寸",
+    size: "13 size",
     auto: "Hussar 660B、Ranger 660B、Clever 660BT"
   },
   {
     photo: zp1,
     type: "240101",
-    size: "15寸",
+    size: "15 size",
     auto: "Hussar 760B"
   },
   {
     photo: zp1,
     type: "240111",
-    size: "17寸",
+    size: "17 size",
     auto: "Hussar 860B"
   },
   {
     photo: zp4,
     type: "240061",
-    size: "17寸",
+    size: "17 size",
     auto: "Smart 450B、Smart 450E"
   },
   {
     photo: zp4,
     type: "240071",
-    size: "20寸",
+    size: "20 size",
     auto: "Ranger 510B、Smart 510B、Clever 510B、Clever 510E、Clever 510BT"
   }
 ];
@@ -394,19 +394,19 @@ const cdzpColumn = [
   {
     photo: zp6,
     type: "240041",
-    size: "17寸",
+    size: "17 size",
     auto: "PX-170N、PX-170DS、PX-170、PX-170G、SPX-170N、SPX-170W、SPX-170DS、SPX-170"
   },
   {
     photo: zp7,
     type: "240051",
-    size: "20寸",
+    size: "20 size",
     auto: "PX-200N、PX-200"
   },
   {
     photo: zp8,
     type: "240011",
-    size: "21寸",
+    size: "21 size",
     auto: "HPX-1500"
   }
 ];
@@ -414,25 +414,25 @@ const hcColumn = [
   {
     photo: hc1,
     type: "250011",
-    size: "17寸",
+    size: "17 size",
     auto: "PX-170N、PX-170DS、PX-170、PX-170G"
   },
   {
     photo: hc2,
     type: "250061",
-    size: "17寸",
+    size: "17 size",
     auto: "SPX-170N、SPX-170W、SPX-170DS、SPX-170"
   },
   {
     photo: hc3,
     type: "250021",
-    size: "20寸",
+    size: "20 size",
     auto: "PX-200N、PX-200"
   },
   {
     photo: hc4,
     type: "250081",
-    size: "21寸",
+    size: "21 size",
     auto: "HPX-1500"
   }
 ];
@@ -440,13 +440,13 @@ const dsColumn = [
   {
     photo: ds2,
     type: "242011",
-    size: "17寸",
+    size: "17 size",
     auto: "PX-170N、PX-170DS、PX-170、PX-170G、SPX-170N、SPX-170W、SPX-170DS、SPX-170"
   },
   {
     photo: ds2,
     type: "242021",
-    size: "20寸",
+    size: "20 size",
     auto: "PX-200N、PX-200"
   }
 ];
@@ -454,7 +454,7 @@ const tsColumn = [
   {
     photo: ts1,
     type: "242012",
-    size: "17寸",
+    size: "17 size",
     auto: "PX-170N、SPX-170N、SPX-170W、SPX-170"
   }
 ];
@@ -462,13 +462,13 @@ const lzColumn = [
   {
     photo: lz1,
     type: "250091",
-    size: "4寸",
+    size: "4 size",
     auto: "HPX-1500"
   },
   {
     photo: lz2,
     type: "250051",
-    size: "5寸",
+    size: "5 size",
     auto:
       "PX-170N、PX-200、PX-170DS、PX-170、PX-170G、PX-200、PX-170G、SPX-170N、SPX-170W、SPX-170DS、SPX-170、HPX-1500"
   }
@@ -613,13 +613,13 @@ export default class Supplies extends React.Component {
     let name = "";
     switch (type) {
       case "SuppliesWash":
-        name = "洗地机";
+        name = "cleaning machine";
         break;
       case "SuppliesSweep":
-        name = "扫地机";
+        name = "floor sweeper";
         break;
       case "SuppliesRub":
-        name = "擦地机";
+        name = "floor polisher";
         break;
       default:
         break;
@@ -649,41 +649,27 @@ export default class Supplies extends React.Component {
           <td>
             <img style={{ width: "50px" }} src={item.photo} />
           </td>
-          <td>
-            {item.type}
-          </td>
-          <td>
-            {item.size}
-          </td>
-          {item.hasOwnProperty("property")
-            ? <td>
-                {item.property}
-              </td>
-            : null}
-          <td>
-            {item.auto}
-          </td>
+          <td>{item.type}</td>
+          <td>{item.size}</td>
+          {item.hasOwnProperty("property") ? <td>{item.property}</td> : null}
+          <td>{item.auto}</td>
         </tr>
       );
     });
     return (
       <div className="productServerContainer">
-        <p className="title">{`耗材-${name}系列`}</p>
+        <p className="title">{`Consumable-${name}`}</p>
         <div className="suppliesImgCons">
-          <Row className="suppliesImgCon">
-            {imgContent}
-          </Row>
+          <Row className="suppliesImgCon">{imgContent}</Row>
         </div>
         <div className="textContent suppliesTableCon">
           <table className="suppliesIntTable">
             <tr>
-              <th>照片</th>
-              <th>产品零件号</th>
-              <th>
-                {contentColumn === jtColumn ? "位置" : "尺寸"}
-              </th>
-              {contentColumn === jtColumn ? <th>性能</th> : null}
-              <th>适用机型</th>
+              <th>Pictures </th>
+              <th>Parts number</th>
+              <th>{contentColumn === jtColumn ? "Position" : "Size"}</th>
+              {contentColumn === jtColumn ? <th>Performance</th> : null}
+              <th>Applicable model</th>
             </tr>
             {trContent}
           </table>

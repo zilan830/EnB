@@ -8,13 +8,13 @@ import contact03 from "web_modules/images/contact03.png";
 const navColumn = [
   {
     key: 1,
-    name: "联系我们",
+    name: "Contacts",
     selected: true,
     span: 24
   }
 ];
 
-const breadColumn = ["联系我们"];
+const breadColumn = ["Contacts"];
 
 const span = {
   nav: 6,
@@ -44,28 +44,24 @@ export default class Contract extends React.Component {
             span={span}
             change={this.onClick}
           />
-          <p className="title mt15">联系我们</p>
+          <p className="title mt15">Contacts</p>
           <Row className="whiteContent">
             <Col span={8}>
               <div className="contact01" />
             </Col>
             <Col span={8} className="pl30">
-              <p className="font14 textColorGrey line20">地址：江苏昆山市千灯镇季广北路119号</p>
               <p className="font14 textColorGrey line20 mb12">
                 Address: No.119 North Jiguang Road, Qiandeng Town, Kunshan City,
                 Jiangsu Province, China.
               </p>
               <p className="font14 textColorGrey line20">
-                电话 (Tel)：400-775-9100
-              </p>
-              <p className="font14 textColorGrey line20">
-                传真 (Fax)：86 0512 57463631
+                Tel：86 0512 57463631
               </p>
               <div
                 className="font14 textColorGrey line20"
                 style={{ display: "flex" }}
               >
-                <span style={{ display: "inline-block" }}>网址 (web)：</span>
+                <span style={{ display: "inline-block" }}>web：</span>
                 <div style={{ display: "inline-block" }}>
                   <p>http://www.bntfloorcare.com</p>
                   <p>http://bntfloorcare.1688.com</p>
@@ -75,22 +71,26 @@ export default class Contract extends React.Component {
               {/*http://bntfloorcare.1688.com*/}
               {/*</p>*/}
               <p className="font14 textColorGrey line20 mb12">
-                邮箱 (e-mail)：bnt@bntfloorcare.com
+                e-mail：bnt@bntfloorcare.com
               </p>
-              <p className="font14 textColorGrey line20">南通工厂:南通邦纳特清洁设备有限公司</p>
-              <p className="font14 textColorGrey line20">地址:南通滨海园区启动区北区</p>
+              <p className="font14 textColorGrey line20">
+                NanTong Factory：Nantong BangNaTe Cleaning Machine Co.，Ltd.
+              </p>
+              <p className="font14 textColorGrey line20">
+                Address：North promoter zone，Nantong coastal zone
+              </p>
             </Col>
             <Col span={7} offset={1}>
               <div className="smallLogoCon">
-                <div className="smallLogo">
-                  {/*<img src={contact03} />*/}
-                </div>
+                <div className="smallLogo">{/*<img src={contact03} />*/}</div>
               </div>
-              <p className="logoTextCh">昆山市贝纳特机械设备有限公司</p>
+              {/*<p className="logoTextCh">昆山市贝纳特机械设备有限公司</p>*/}
               <p className="logoTextEn">
                 Kunshan Bennett Cleaning Machine Co.,Ltd.
               </p>
-              <p className="logoTel">全国热线 400-775-9100 </p>
+              <p className="logoTel">
+                National Service Hotline 86 0512 57473116
+              </p>
               <div className="qrcode">
                 <img src={contact02} />
               </div>

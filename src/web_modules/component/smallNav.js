@@ -76,7 +76,7 @@ export default class SmallNav extends React.Component {
     let navContent = [];
     navColumn.map(items => {
       if (items.children) {
-        let itemList = items.children.map(item =>
+        let itemList = items.children.map(item => (
           <span
             key={item.key}
             className={
@@ -88,7 +88,7 @@ export default class SmallNav extends React.Component {
           >
             {item.name}
           </span>
-        );
+        ));
         itemList = (
           <div key={`${items.key}Row`} className="productDetCon">
             {itemList}
@@ -122,13 +122,13 @@ export default class SmallNav extends React.Component {
       }
     });
 
-    let position = "首页";
+    let position = "Home";
 
     breadColumn.forEach(item => {
       position = `${position}>${item}`;
     });
 
-    const breadContent = `当前位置:${position}`;
+    const breadContent = `Position:${position}`;
 
     return (
       <Row

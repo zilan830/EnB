@@ -13,71 +13,107 @@ export default class Merchants extends React.Component {
     return (
       <div>
         <div className="whiteContent">
-          <p className="title">招商加盟</p>
+          <p className="title">Join Us</p>
         </div>
         <div className="imgContainer">
           <img src={authBanner} />
         </div>
         <div className="productDetInt">
           <Tabs defaultActiveKey="1">
-            <TabPane tab="招商政策" key="1">
+            <TabPane tab="Agency policy" key="1">
               <div className="productDetIntCon">
-                <p className="title border">贝纳特招商政策</p>
+                <p className="title border">Agency Policy Of BENNETT</p>
                 <Row>
                   <Col span={12}>
                     <div className="productDetIntConImg">
                       <img src={center1} />
                     </div>
                   </Col>
-                  <Col span={12} className="pt4vh">
-                    <p className="sent">1、营销资源：不定期给代理商提供客户数据</p>
-                    <p className="sent">2、售后培训：代理商可安排售后人员到工厂进行现场实习</p>
-                    <p className="sent">3、 广告支持：厂商一体线上线下联动推广</p>
-                    <p className="sent">4、 产品优势：不断研发，提供高品质、高性价比的产品</p>
-                    <p className="sent">5、 价格政策：统一的市场价，保障代理商的利润空间</p>
-                    <p className="sent">6、 销售激励：设置销售返利政策</p>
-                    <p className="sent">7、 区域保护：确保区域内独家经营</p>
+                  <Col span={12}>
+                    <p className="sent">
+                      1、Marketing Resource: We provide customer data for agent
+                      from time to time
+                    </p>
+                    <p className="sent">
+                      2、After Sales Training: Agent could arrange customer
+                      service staff to participate in the factory training
+                    </p>
+                    <p className="sent">
+                      3、Advertising Services: The promotion is conducted using a
+                      method of combining online service and offline service,
+                      which is based on working in partnership with the key
+                      industry partners
+                    </p>
+                    <p className="sent">
+                      4、Product advantage: Product development, providing
+                      high-quality and cost-effective product
+                    </p>
+                    <p className="sent">
+                      5、Price policy: Uniform market price, safeguard the profit
+                      margin of the agent
+                    </p>
+                    <p className="sent">
+                      6、Sales incentive program: Set up sales rebate policy
+                    </p>
+                    <p className="sent">
+                      7、Locality protection: Ensure area exclusive right
+                    </p>
                   </Col>
                 </Row>
               </div>
             </TabPane>
-            <TabPane tab="加盟条件" key="2">
+            <TabPane tab="Join Conditions" key="2">
               <div className="productDetIntCon">
                 <div style={{ width: "324px", margin: "0 auto" }}>
                   <p className="title" style={{ textAlign: "left" }}>
-                    贝纳特品牌加盟条件
+                    BENNETT Join Conditions
                   </p>
-                  <p className="sent">1、 具有合法资格的企业或具有完全民事行为能力的自然人</p>
-                  <p className="sent">2、 认同贝纳特品牌经营理念及经营模式</p>
-                  <p className="sent">3、 遵守贝纳特的市场管理及销售价格政策</p>
-                  <p className="sent">4、 具有必要的营业面积及完整的组织架构</p>
-                  <p className="sent">5、 有本行业品牌管理及销售管理经验者优先考虑</p>
+                  <p className="sent">
+                    1、Who is legally registered with independent legal person
+                    qualification of the enterprise or a natural person with
+                    full civil capacity
+                  </p>
+                  <p className="sent">
+                    2、Agree with the operation principle and business models of
+                    BENNETT
+                  </p>
+                  <p className="sent">
+                    3、Follow the market management and sale price policy
+                  </p>
+                  <p className="sent">
+                    4、Have a necessary business area and a good and clear
+                    organizational structure
+                  </p>
+                  <p className="sent">
+                    5、Having brand management of same industry and sale
+                    management experience take precedence
+                  </p>
                 </div>
               </div>
             </TabPane>
-            <TabPane tab="加盟流程" key="3">
+            <TabPane tab="Joining Process" key="3">
               <div className="productDetIntCon">
-                <p className="title">加盟贝纳特流程</p>
+                <p className="title">Joining Process Of us</p>
                 <p className="progress">
-                  <span className="text">加盟申请</span>
+                  <span className="text">Join-in Applying</span>
                 </p>
                 <p className="progress">
                   <span className="arrow" />
                 </p>
                 <p className="progress">
-                  <span className="text">加盟洽谈</span>
+                  <span className="text">Join-in Negotiation</span>
                 </p>
                 <p className="progress">
                   <span className="arrow" />
                 </p>
                 <p className="progress">
-                  <span className="text">加盟签约</span>
+                  <span className="text">Joining & Signing</span>
                 </p>
                 <p className="progress">
                   <span className="arrow" />
                 </p>
                 <p className="progress">
-                  <span className="text">正式运行</span>
+                  <span className="text">Formal Run</span>
                 </p>
               </div>
             </TabPane>

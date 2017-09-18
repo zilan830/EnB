@@ -19,7 +19,7 @@ export default class MachineChoice extends React.Component {
     switch (type) {
       case "MachineChoiceWash":
         imgPath = ps1;
-        name = "洗地机";
+        name = "cleaning machine";
         content = (
           <div className="textContent mt30">
             <p className="machineText">如何选择洗地机？</p>
@@ -78,7 +78,7 @@ export default class MachineChoice extends React.Component {
         break;
       case "MachineChoiceSweep":
         imgPath = ps2;
-        name = "扫地机";
+        name = "floor sweeper";
         content = (
           <div className="textContent mt30">
             <p className="machineText">如何选购扫地机？</p>
@@ -123,7 +123,7 @@ export default class MachineChoice extends React.Component {
         break;
       case "MachineChoiceRub":
         imgPath = ps3;
-        name = "擦地机";
+        name = "floor polisher";
         content = (
           <div className="textContent mt30">
             <p className="machineText">
@@ -146,7 +146,7 @@ export default class MachineChoice extends React.Component {
     }
     return (
       <div className="productServerContainer">
-        <p className="title">{`机器选型-${name}系列`}</p>
+        <p className="title">{`Selection-${name}`}</p>
         <div className="productServerBanner">
           <img src={imgPath} />
         </div>

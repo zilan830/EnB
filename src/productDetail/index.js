@@ -7,70 +7,70 @@ const TabPane = Tabs.TabPane;
 const navColumn = [
   {
     key: 1,
-    name: "洗地机系列",
+    name: "Cleaning machine",
     selected: true,
     span: 8,
     children: [
       {
         key: 10,
-        name: "smart系列",
+        name: "smart",
         component: "6",
         selected: true
       },
       {
         key: 11,
-        name: "clever系列",
+        name: "clever",
         component: "5"
       },
       {
         key: 12,
-        name: "ranger系列",
+        name: "ranger",
         component: "3"
       },
       {
         key: 13,
-        name: "Hussar系列",
+        name: "Hussar",
         component: "4"
       },
       {
         key: 14,
-        name: "dragoon系列",
+        name: "dragoon",
         component: "2"
       }
     ]
   },
   {
     key: 2,
-    name: "扫地机系列",
+    name: "Floor sweeper",
     span: 8,
     children: [
       {
         key: 20,
-        name: "tornado系列",
+        name: "tornado",
         component: "1"
       }
     ]
   },
   {
     key: 3,
-    name: "擦地机系列",
+    name: "Floor polisher",
     span: 8,
     children: [
       {
         key: 30,
-        name: "PX系列",
+        name: "PX",
         component: "7"
       },
       {
         key: 31,
-        name: "SPX系列",
+        name: "SPX",
         component: "8"
       }
     ]
   }
 ];
 
-const breadColumn = ["产品中心", "洗地机系列", "smart系列"];
+const breadColumn = ["Products", "Cleaning machine", "smart"];
 
 const span = {
   nav: 10,
@@ -96,9 +96,9 @@ export default class ProductDetail extends React.Component {
     //要改
     const type = href.match(reg)[0].match(reg2)[0];
     const ind = href.match(reg)[1].match(reg2)[0];
-    if (href.indexOf("洗地机")) {
+    if (href.indexOf("Cleaning machine")) {
       this.renderSelect(0, type);
-    } else if (href.indexOf("扫地机")) {
+    } else if (href.indexOf("Floor sweeper")) {
       this.renderSelect(1, type);
     } else {
       this.renderSelect(2, type);
@@ -206,9 +206,7 @@ export default class ProductDetail extends React.Component {
             key={inde}
           >
             <div className="bigImgTag">
-              <div className="bigImgInt">
-                {item.goodsName}
-              </div>
+              <div className="bigImgInt">{item.goodsName}</div>
               <div className="bigImgCon">
                 <img src={item.imgUrl} />
               </div>
@@ -230,26 +228,18 @@ export default class ProductDetail extends React.Component {
       );
     }
     if (tableList.length > 0) {
-      tableContent = tableList.map((item, inde) =>
+      tableContent = tableList.map((item, inde) => (
         <tr key={`tr-${inde}`}>
-          <td>
-            {item.name}
-          </td>
-          <td>
-            {item.item}
-          </td>
-          <td>
-            {item.value}
-          </td>
+          <td>{item.name}</td>
+          <td>{item.item}</td>
+          <td>{item.value}</td>
         </tr>
-      );
+      ));
       tableContent.unshift(
         <tr key="head">
           <th>名称</th>
           <th>Name</th>
-          <th>
-            {Name}
-          </th>
+          <th>{Name}</th>
         </tr>
       );
     }
@@ -263,70 +253,66 @@ export default class ProductDetail extends React.Component {
             change={this.onClick}
           />
 
-          <div className="productImgShow">
-            {imgContent}
-          </div>
+          <div className="productImgShow">{imgContent}</div>
 
           <div className="productDetInt">
             <Tabs defaultActiveKey="1">
-              <TabPane tab="产品详情" key="1">
+              <TabPane tab="Product Details" key="1">
                 <div className="productDetIntCon">
                   <p>
-                    <span className="productDetIntTitle">产品型号：</span>
+                    <span className="productDetIntTitle">Product Number：</span>
                     {tableDetList.goodsName}
                   </p>
                   <p>
-                    <span className="productDetIntTitle">适用范围：</span>
+                    <span className="productDetIntTitle">Application：</span>
                     {tableDetList.goodsRange}
                   </p>
                   <p>
-                    <span className="productDetIntTitle">产品介绍：</span>
+                    <span className="productDetIntTitle">Description：</span>
                   </p>
                   <p>
                     <span className="circle" />
-                    {`主要特点：${tableDetList.feature}`}
+                    {`Main Feature：${tableDetList.feature}`}
                   </p>
                   <p>
-                    <span className="circle" />产品优势
+                    <span className="circle" />Product Advantages
                   </p>
                   <p>
                     {tableDetList.advantage && tableDetList.advantage.length > 0
-                      ? tableDetList.advantage.map((item, inde) =>
+                      ? tableDetList.advantage.map((item, inde) => (
                           <span key={`advantage-${inde}`} className="inlineP">
                             {inde + 1}、{item}
                           </span>
-                        )
+                        ))
                       : null}
                   </p>
                 </div>
               </TabPane>
-              <TabPane tab="技术参数" key="2">
+              <TabPane tab="Technical Parameters" key="2">
                 <div className="productDetIntCon">
-                  <table className="productDetIntTable">
-                    {tableContent}
-                  </table>
+                  <table className="productDetIntTable">{tableContent}</table>
                 </div>
               </TabPane>
-              <TabPane tab="操作讲解" key="3">
-                {tableDetList.videoUrl
-                  ? <div className="productDetIntCon">
-                      <video
-                        width="100%"
-                        height="100%"
-                        src={tableDetList.videoUrl}
-                        controls
-                      >
-                        Your browser does not support HTML5 video.
-                      </video>
-                    </div>
-                  : null}
-                {tableDetList.instruction
-                  ? <div className="productDetIntCon">
-                      <img src={tableDetList.instruction} />
-                    </div>
-                  : null}
+              <TabPane tab="Operation Explanation" key="3">
+                {tableDetList.videoUrl ? (
+                  <div className="productDetIntCon">
+                    <video
+                      width="100%"
+                      height="100%"
+                      src={tableDetList.videoUrl}
+                      controls
+                    >
+                      Your browser does not support HTML5 video.
+                    </video>
+                  </div>
+                ) : null}
+                {tableDetList.instruction ? (
+                  <div className="productDetIntCon">
+                    <img src={tableDetList.instruction} />
+                  </div>
+                ) : null}
               </TabPane>
-              <TabPane tab="应用案例" key="4">
+              <TabPane tab="Cases" key="4">
                 <div className="productDetIntCon">
                   <img src={tableDetList.application} />
                 </div>

@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router";
 import busIcon from "web_modules/images/icLogo.png";
-import { Row, Col } from "antd";
+import { Row, Col, Radio } from "antd";
 import logoImg from "web_modules/images/logo.png";
+const RadioGroup = Radio.Group;
+const RadioButton = Radio.Button;
 
 class Template extends React.Component {
   // getChildContext() {
@@ -15,49 +17,49 @@ class Template extends React.Component {
     super(props);
     const column = [
       {
-        name: "首页",
+        name: "Home",
         path: "/home",
         selected: true,
         key: "home"
       },
       {
-        name: "产品中心",
+        name: "Products",
         path: "/productCenter",
         selected: false,
         key: "productCenter"
       },
       {
-        name: "产品服务",
+        name: "Service",
         path: "/productSever",
         selected: false,
         key: "productSever"
       },
       {
-        name: "贝纳特",
+        name: "Bennett",
         path: "/company",
         selected: false,
         key: "company"
       },
       {
-        name: "公司动态",
+        name: "Events",
         path: "/activity",
         selected: false,
         key: "activity"
       },
       {
-        name: "联系我们",
+        name: "Contacts",
         path: "/contact",
         selected: false,
         key: "contact"
       },
       {
-        name: "案例集锦",
+        name: "Case",
         path: "/cases",
         selected: false,
         key: "cases"
       },
       {
-        name: "授权服务中心",
+        name: "Authorized",
         path: "/center",
         selected: false,
         key: "center"
@@ -111,6 +113,10 @@ class Template extends React.Component {
     });
   }
 
+  onLanguageChange = () => {
+    window.location.href = "http://www.bntfloorcare.com";
+  };
+
   render() {
     const { column } = this.state;
     const navContent = column.map(item => {
@@ -122,9 +128,7 @@ class Template extends React.Component {
             this.onClick(item.key);
           }}
         >
-          <Link to={item.path}>
-            {item.name}
-          </Link>
+          <Link to={item.path}>{item.name}</Link>
         </Col>
       );
     });
@@ -147,16 +151,27 @@ class Template extends React.Component {
               </p>
               <p id="en">High-end Cleaning Machine Leader</p>
             </div>
+            <div className="languageChangeCon">
+              <RadioGroup>
+                <RadioButton
+                  value="large"
+                  onClick={() => {
+                    this.onLanguageChange();
+                  }}
+                >
+                  中文
+                </RadioButton>
+                <RadioButton value="large" disabled>
+                  English
+                </RadioButton>
+              </RadioGroup>
+            </div>
           </div>
         </header>
         <nav className="navigation">
-          <Row className="navInnerContainer">
-            {navContent}
-          </Row>
+          <Row className="navInnerContainer">{navContent}</Row>
         </nav>
-        <div className="content">
-          {this.props.children}
-        </div>
+        <div className="content">{this.props.children}</div>
         <footer className="footer">
           <Row className="footCon">
             <Col span={20} className="footLink">
@@ -167,11 +182,14 @@ class Template extends React.Component {
                   this.onClick("contact");
                 }}
               >
-                联系我们
+                Contact us
               </Link>
               <p>
-                <span>昆山市贝纳特机械设备有限公司</span>
-                <span>地址：江苏省昆山市千灯镇季广北路119号</span>
+                <p>Kunshan Bennett Cleaning Machine Co.,Ltd</p>
+                <p>
+                  Address: No.119 North Jiguang Road, Qiandeng Town, Kunshan
+                  City, Jiangsu Province, China.
+                </p>
                 <span>
                   <a href="http://www.miibeian.gov.cn/" target="_blank">
                     苏IPC备11072808

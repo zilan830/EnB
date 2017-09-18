@@ -2,7 +2,7 @@ import React from "react";
 import SmallNav from "web_modules/component/smallNav";
 import News from "./news";
 
-const breadColumn = ["公司动态", "企业新闻"];
+const breadColumn = ["Events", "News"];
 
 const span = {
   nav: 6,
@@ -15,14 +15,14 @@ export default class Activity extends React.Component {
     this.navColumn = [
       {
         key: 1,
-        name: "企业新闻",
+        name: "News",
         selected: true,
         span: 12,
         component: "News"
       },
       {
         key: 2,
-        name: "展会风采",
+        name: "Exhibition show",
         span: 12,
         component: "Show"
       }

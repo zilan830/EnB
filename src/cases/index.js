@@ -3,7 +3,7 @@ import SmallNav from "web_modules/component/smallNav";
 import Picture from "./picture";
 import Video from "./video";
 
-const breadColumn = ["案例集锦", "案例集锦-图片"];
+const breadColumn = ["Case", "Pictures"];
 
 const span = {
   nav: 12,
@@ -16,19 +16,19 @@ export default class Cases extends React.Component {
     this.navColumn = [
       {
         key: 1,
-        name: "案例集锦",
+        name: "Case",
         selected: true,
         span: 24,
         children: [
           {
             key: 10,
-            name: "案例集锦-图片",
+            name: "Pictures",
             selected: true,
             component: "Picture"
           },
           {
             key: 11,
-            name: "案例集锦-视频",
+            name: "Videos",
             component: "Video"
           }
         ]

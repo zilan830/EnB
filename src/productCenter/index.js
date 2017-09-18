@@ -10,26 +10,26 @@ import baseReq from "web_modules/api/base";
 const navColumn = [
   {
     key: 1,
-    name: "洗地机系列",
+    name: "Cleaning machine ",
     selected: true,
     span: 8,
     component: "1"
   },
   {
     key: 2,
-    name: "扫地机系列",
+    name: "Floor sweeper ",
     span: 8,
     component: "2"
   },
   {
     key: 3,
-    name: "擦地机系列",
+    name: "Floor polisher ",
     span: 8,
     component: "3"
   }
 ];
 
-const breadColumn = ["产品中心", "洗地机系列"];
+const breadColumn = ["Products", "Cleaning machine "];
 
 const span = {
   nav: 10,
@@ -91,24 +91,24 @@ export default class ProductCenter extends React.Component {
       this.getData("2");
       this.setState({
         currentComponent: "2",
-        breadColumn: ["产品中心", "扫地机系列"],
+        breadColumn: ["Products", "Floor sweeper"],
         navColumn: [
           {
             key: 1,
-            name: "洗地机系列",
+            name: "Cleaning machine",
             span: 8,
             component: "1"
           },
           {
             key: 2,
-            name: "扫地机系列",
+            name: "Floor sweeper",
             span: 8,
             component: "2",
             selected: true
           },
           {
             key: 3,
-            name: "擦地机系列",
+            name: "Floor polisher",
             span: 8,
             component: "3"
           }
@@ -118,23 +118,23 @@ export default class ProductCenter extends React.Component {
       this.getData("3");
       this.setState({
         currentComponent: "3",
-        breadColumn: ["产品中心", "擦地机系列"],
+        breadColumn: ["Products", "Floor polisher"],
         navColumn: [
           {
             key: 1,
-            name: "洗地机系列",
+            name: "Cleaning machine",
             span: 8,
             component: "1"
           },
           {
             key: 2,
-            name: "扫地机系列",
+            name: "Floor sweeper",
             span: 8,
             component: "2"
           },
           {
             key: 3,
-            name: "擦地机系列",
+            name: "Floor polisher",
             span: 8,
             component: "3",
             selected: true
@@ -149,20 +149,20 @@ export default class ProductCenter extends React.Component {
         navColumn: [
           {
             key: 1,
-            name: "洗地机系列",
+            name: "Cleaning machine",
             selected: true,
             span: 8,
             component: "1"
           },
           {
             key: 2,
-            name: "扫地机系列",
+            name: "Floor sweeper",
             span: 8,
             component: "2"
           },
           {
             key: 3,
-            name: "擦地机系列",
+            name: "Floor polisher",
             span: 8,
             component: "3"
           }
@@ -193,13 +193,13 @@ export default class ProductCenter extends React.Component {
     if (dataList.length > 0) {
       switch (currentComponent) {
         case "1":
-          itemName = "洗地机";
+          itemName = "Cleaning machine";
           break;
         case "2":
-          itemName = "扫地机";
+          itemName = "Floor sweeper";
           break;
         case "3":
-          itemName = "擦地机";
+          itemName = "Floor polisher";
           break;
         default:
           break;
@@ -229,9 +229,7 @@ export default class ProductCenter extends React.Component {
                         </div>
                         <div className="productItemImgInt">
                           {i.model}
-                          <span className="det">
-                            {i.power}
-                          </span>
+                          <span className="det">{i.power}</span>
                         </div>
                       </div>
                     </Link>
@@ -262,9 +260,7 @@ export default class ProductCenter extends React.Component {
                   {items.menu1}
                   {itemName}
                 </p>
-                <p className="productIntroduction">
-                  {goodsRange}
-                </p>
+                <p className="productIntroduction">{goodsRange}</p>
                 {itContent}
               </div>
             </Col>
@@ -276,9 +272,7 @@ export default class ProductCenter extends React.Component {
 
     return (
       <div className="productContainer">
-        <div className="productBanner">
-          {/*<img src={product01}/>*/}
-        </div>
+        <div className="productBanner">{/*<img src={product01}/>*/}</div>
         <div className="contentContainer">
           <SmallNav
             navColumn={this.state.navColumn}

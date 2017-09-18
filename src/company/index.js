@@ -7,7 +7,7 @@ import Publicity from "./publicity";
 import Com from "./company";
 import SmallNav from "web_modules/component/smallNav";
 
-const breadColumn = ["贝纳特", "关于我们", "公司简介"];
+const breadColumn = ["Bennett", "About Us", "Profile"];
 
 const span = {
   nav: 13,
@@ -20,43 +20,43 @@ export default class Company extends React.Component {
     this.navColumn = [
       {
         key: 1,
-        name: "关于我们",
+        name: "About Us",
         selected: true,
         span: 6,
         children: [
           {
             key: 10,
-            name: "公司简介",
+            name: "Profile",
             selected: true,
             component: "About"
           },
           {
             key: 11,
-            name: "产品发展史",
+            name: "History",
             component: "Evolution"
           },
           {
             key: 12,
-            name: "厂景厂貌",
+            name: "Appearance",
             component: "Company"
           }
         ]
       },
       {
         key: 2,
-        name: "企业理念",
+        name: "Concept",
         span: 6,
         component: "Concept"
       },
       {
         key: 3,
-        name: "资质荣誉",
+        name: "Honors",
         span: 6,
         component: "Honors"
       },
       {
         key: 4,
-        name: "贝纳特宣传册",
+        name: "Brochure",
         span: 6,
         component: "Publicity"
       }

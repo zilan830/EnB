@@ -33,9 +33,7 @@ export default class Video extends React.Component {
             key={index}
             onClick={() => this.onClick(index)}
           >
-            <p className="casePicItem">
-              {item.title}
-            </p>
+            <p className="casePicItem">{item.title}</p>
           </li>
         );
       });
@@ -43,25 +41,25 @@ export default class Video extends React.Component {
 
     return (
       <div className="whiteContent">
-        <p className="title">案例集锦-视频</p>
+        <p className="title">Videos</p>
         <Row className="videoContent">
           <Col span={6}>
-            <ul className="casePicUl">
-              {liContent}
-            </ul>
+            <ul className="casePicUl">{liContent}</ul>
           </Col>
           <Col span={18}>
             <div className="videoCon">
-              {data.length > 0 && data[info].infoUrl
-                ? <video
-                    width="100%"
-                    height="100%"
-                    src={data[info].infoUrl}
-                    controls
-                  >
-                    Your browser does not support HTML5 video.
-                  </video>
-                : <div>暂无</div>}
+              {data.length > 0 && data[info].infoUrl ? (
+                <video
+                  width="100%"
+                  height="100%"
+                  src={data[info].infoUrl}
+                  controls
+                >
+                  Your browser does not support HTML5 video.
+                </video>
+              ) : (
+                <div>暂无</div>
+              )}
             </div>
           </Col>
         </Row>

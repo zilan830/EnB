@@ -169,7 +169,7 @@ export default class Home extends React.Component {
           <Row className="categoryContainer" gutter={48}>
             <Col span={8} className="category">
               <Link to="/company">
-                <p className="title">关于我们</p>
+                <p className="title">About Us</p>
                 <div className="categoryInner">
                   <p className="categoryText">
                     昆山市贝纳特机械设备有限公司是一家集研发、制造、分销于一体的综合性清洁设备企业。自2007年成立至今，依托于长江三角经济开发区——昆山市千灯镇这一地理优势，一直致力于提供最优质、最高效、最经济的……
@@ -178,31 +178,27 @@ export default class Home extends React.Component {
               </Link>
             </Col>
             <Col span={8} className="category">
-              <p className="title">新闻动态</p>
+              <p className="title">News</p>
               <div className="categoryInner">
-                <ul className="categoryUl">
-                  {content}
-                </ul>
+                <ul className="categoryUl">{content}</ul>
               </div>
             </Col>
             <Col span={8} className="category">
-              <p className="title">案例集锦</p>
-              {caseInfo.length > 0
-                ? <Link to="/cases">
-                    <Row className="categoryInner">
-                      <Col span={14} className="categoryImgCon">
-                        <div className="categoryImg">
-                          <img src={caseInfo[0].infoUrl} />
-                        </div>
-                      </Col>
-                      <Col span={10} className="categoryImgTitle">
-                        <div className="categoryText">
-                          {caseInfo[0].title}
-                        </div>
-                      </Col>
-                    </Row>
-                  </Link>
-                : null}
+              <p className="title">Case Center</p>
+              {caseInfo.length > 0 ? (
+                <Link to="/cases">
+                  <Row className="categoryInner">
+                    <Col span={14} className="categoryImgCon">
+                      <div className="categoryImg">
+                        <img src={caseInfo[0].infoUrl} />
+                      </div>
+                    </Col>
+                    <Col span={10} className="categoryImgTitle">
+                      <div className="categoryText">{caseInfo[0].title}</div>
+                    </Col>
+                  </Row>
+                </Link>
+              ) : null}
             </Col>
           </Row>
         </div>
