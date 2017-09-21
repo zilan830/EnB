@@ -7,7 +7,7 @@ export default class Evolution extends React.Component {
     return (
       <div>
         <div className="backContent sp">
-          <p className="title">产品发展史 The History Of Product</p>
+          <p className="title">The History Of Product</p>
         </div>
         <div className="imgContainerBorder">
           <div className="evolution01" />

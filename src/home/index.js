@@ -124,7 +124,7 @@ export default class Home extends React.Component {
                   </Col>
                   <Col span={15} className="productRight">
                     <div>
-                      <p>洗地机系列</p>
+                      {/*<p>洗地机系列</p>*/}
                       <p>cleaning machine series</p>
                     </div>
                   </Col>
@@ -141,7 +141,7 @@ export default class Home extends React.Component {
                   </Col>
                   <Col span={15} className="productRight">
                     <div>
-                      <p>扫地机系列</p>
+                      {/*<p>扫地机系列</p>*/}
                       <p>floor sweeper series</p>
                     </div>
                   </Col>
@@ -158,7 +158,7 @@ export default class Home extends React.Component {
                   </Col>
                   <Col span={15} className="productRight">
                     <div>
-                      <p>擦地机系列</p>
+                      {/*<p>擦地机系列</p>*/}
                       <p>floor polisher series</p>
                     </div>
                   </Col>

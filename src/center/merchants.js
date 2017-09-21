@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col, Tabs, Icon } from "antd";
 import authBanner from "web_modules/images/auth1.jpg";
-import center1 from "web_modules/images/center02@4x.png";
+import center1 from "web_modules/images/center02@4x.jpg";
 const TabPane = Tabs.TabPane;
 
 export default class Merchants extends React.Component {

@@ -46,7 +46,7 @@ export default class Publicity extends React.Component {
             <Icon type="left" />
           </span>
           <div className="publicity">
-            <img src={`http://47.92.123.27:8888/xcc/${index}.jpg`} />
+            <img src={`/xcc/${index}.jpg`} />
           </div>
           <span
             onClick={this.onRight}

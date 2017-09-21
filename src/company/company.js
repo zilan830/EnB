@@ -11,20 +11,20 @@ export default class Com extends React.Component {
     return (
       <div>
         <div className="backContent sp">
-          <p className="title">部分厂景厂貌</p>
+          <p className="title">Part of factory scenery</p>
         </div>
         <div className="imgContainerBorder">
           <Row>
             <Col span={12}>
               <div style={{ padding: "0 20px 0 50px" }}>
                 <img src={com1} />
-                <p className="comP" data-content="装配区" />
+                <p className="comP p1" data-content="Assembly area" />
               </div>
             </Col>
             <Col span={12}>
               <div style={{ padding: "0 50px 0 20px" }}>
                 <img src={com2} />
-                <p className="comP" data-content="仓库区" />
+                <p className="comP p2" data-content="Warehouse area" />
               </div>
             </Col>
           </Row>
@@ -32,13 +32,13 @@ export default class Com extends React.Component {
             <Col span={12}>
               <div style={{ padding: "40px 20px 0 50px" }}>
                 <img src={com3} />
-                <p className="comP" data-content="成品区" />
+                <p className="comP p3" data-content="Finished product area" />
               </div>
             </Col>
             <Col span={12}>
               <div style={{ padding: "40px 50px 0 20px" }}>
                 <img src={com4} />
-                <p className="comP" data-content="会议区" />
+                <p className="comP p4" data-content="Conference area" />
               </div>
             </Col>
           </Row>

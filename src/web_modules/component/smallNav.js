@@ -95,29 +95,29 @@ export default class SmallNav extends React.Component {
           </div>
         );
         navContent.push(
-          <Col
+          <span
             key={items.key}
-            span={items.span}
+            style={{ marginRight: "25px", display: "inline-block" }}
             className={
               items.selected ? "productItem active hover" : "productItem"
             }
           >
             {items.name}
             {itemList}
-          </Col>
+          </span>
         );
       } else {
         navContent.push(
-          <Col
+          <span
             key={items.key}
-            span={items.span}
+            style={{ marginRight: "25px", display: "inline-block" }}
             className={items.selected ? "productItem active" : "productItem"}
             onClick={() => {
               this.onClick(items.key, items.component);
             }}
           >
             {items.name}
-          </Col>
+          </span>
         );
       }
     });

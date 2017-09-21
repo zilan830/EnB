@@ -180,15 +180,15 @@ export default class Warranty extends React.Component {
 
   render() {
     const { items, type } = this.state;
-    const tds = items.map((tr, index) =>
+    const tds = items.map((tr, index) => (
       <tr className="textColorGrey">
-        {tr.map(td =>
+        {tr.map(td => (
           <td key={`${td}${index}`} className="textColorGrey">
             {td}
           </td>
-        )}
+        ))}
       </tr>
-    );
+    ));
     let text = "洗地机";
     if (type === "WarrantyDragoon") {
       text = "扫地机";
@@ -202,7 +202,7 @@ export default class Warranty extends React.Component {
         </div>
         <div className="textContent">
           <p className="title">
-            {this.props.type.slice(8)} 系列保修说明：
+            {this.props.type.slice(8)} Series Warranty Introductions：
           </p>
           <Row className="warranty">
             <Col span={12} className="warrantyItem">

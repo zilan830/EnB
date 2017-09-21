@@ -66,7 +66,7 @@ export default class ProductSever extends React.Component {
       },
       {
         key: 3,
-        name: "Warranty",
+        name: "Introduction",
         span: 6,
         component: "3",
         children: [

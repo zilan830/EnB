@@ -73,8 +73,8 @@ const navColumn = [
 const breadColumn = ["Products", "Cleaning machine", "smart"];
 
 const span = {
-  nav: 10,
-  bread: 14
+  nav: 14,
+  bread: 10
 };
 
 export default class ProductDetail extends React.Component {

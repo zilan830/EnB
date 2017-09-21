@@ -26,36 +26,36 @@
 }
 
 //图片箭头
-.publicImg{
-  position:relative;
-  .arrow{
+.publicImg {
+  position: relative;
+  .arrow {
     position: absolute;
     display: block;
     width: 100px;
     height: 100px;
-    background-color: rgba(255,255,255,0.4);
-    top:45%;
+    background-color: rgba(255, 255, 255, 0.4);
+    top: 45%;
     text-align: center;
     cursor: hand;
     cursor: pointer;
-    >i{
+    > i {
       font-size: 80px;
       line-height: 100px;
-      color: rgba(0,0,0,0.4);
+      color: rgba(0, 0, 0, 0.4);
     }
-    &:hover{
-      background-color: rgba(255,255,255,0.6);
-      color: rgba(0,0,0,0.8);
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.6);
+      color: rgba(0, 0, 0, 0.8);
     }
-    &:active{
-      background-color: rgba(255,255,255,0.8);
-      color: rgba(0,0,0,0.8);
+    &:active {
+      background-color: rgba(255, 255, 255, 0.8);
+      color: rgba(0, 0, 0, 0.8);
     }
-    &.left{
-      left:30px;
+    &.left {
+      left: 30px;
     }
-    &.right{
-      right:30px;
+    &.right {
+      right: 30px;
     }
   }
 }
@@ -69,10 +69,10 @@
       margin: 0 auto;
       padding-top: 22px;
       position: relative;
-      .languageChangeCon{
+      .languageChangeCon {
         position: absolute;
-        right:0;
-        bottom:0;
+        right: 0;
+        bottom: 0;
       }
       .logoImg {
         width: 130px;
@@ -125,7 +125,7 @@
         a {
           color: white;
           font-size: 15px;
-          letter-spacing: 3px;
+          letter-spacing: 1px;
           display: inline-block;
           line-height: 40px;
           text-align: center;
@@ -151,16 +151,16 @@
       padding-top: 20px;
       .footLink {
         color: @wordColor;
-        font-size: 14px;
+        font-size: 12px;
         .footLinkTag {
           text-decoration: none;
           cursor: pointer;
           cursor: hand;
           color: @wordColor;
-          line-height: 28px;
+          line-height: 20px;
         }
         > p {
-          line-height: 28px;
+          line-height: 20px;
           > span {
             margin-right: 10px;
             a {
@@ -248,7 +248,6 @@
           .productDetCon {
             border-top: 1px solid @borderColor;
             background-color: white;
-            top: 25px;
             display: block;
             position: absolute;
             min-width: 800px;
@@ -701,16 +700,16 @@
     margin-top: 70px;
     font-size: 13px;
     color: #4C4948;
-    &.mt30{
+    &.mt30 {
       margin-top: 0;
       margin-top: 30px;
     }
-    .machineText{
+    .machineText {
       font-size: 14px;
       color: @wordColor;
       line-height: 20px;
       margin-bottom: 10px;
-      >span{
+      > span {
         font-weight: bold;
       }
     }
@@ -892,6 +891,26 @@
       font-weight: bold;
       color: @wordColor;
       position: relative;
+      &.p1 {
+        &:after {
+          margin-left: -59px;
+        }
+      }
+      &.p2 {
+        &:after {
+          margin-left: -64px;
+        }
+      }
+      &.p3 {
+        &:after {
+          margin-left: -83px;
+        }
+      }
+      &.p4 {
+        &:after {
+          margin-left: -65px;
+        }
+      }
       &:before {
         content: "";
         display: block;
@@ -946,7 +965,7 @@
     background-size: 1013px 100px;
   }
   .evolution01 {
-    background: url('./../images/evolution@4x.png') no-repeat center center;
+    background: url('./../images/evolution@4x.jpg') no-repeat center center;
     max-width: 1013px;
     height: 450px;
     background-size: 1013px 450px;
@@ -1361,6 +1380,10 @@ th {
   text-align: center;
 }
 
+.font12 {
+  font-size: 12px;
+}
+
 .font14 {
   font-size: 14px;
 }
@@ -1429,7 +1452,7 @@ th {
   padding-top: 50px;
 }
 
-.pt4vh{
+.pt4vh {
   padding-top: 4vh;
 }
 

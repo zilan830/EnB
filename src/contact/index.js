@@ -55,13 +55,13 @@ export default class Contract extends React.Component {
                 Jiangsu Province, China.
               </p>
               <p className="font14 textColorGrey line20">
-                Tel：86 0512 57463631
+                Tel：86 0512 57473116
               </p>
               <div
                 className="font14 textColorGrey line20"
                 style={{ display: "flex" }}
               >
-                <span style={{ display: "inline-block" }}>web：</span>
+                <span style={{ display: "inline-block" }}>Web：</span>
                 <div style={{ display: "inline-block" }}>
                   <p>http://www.bntfloorcare.com</p>
                   <p>http://bntfloorcare.1688.com</p>
@@ -71,10 +71,10 @@ export default class Contract extends React.Component {
               {/*http://bntfloorcare.1688.com*/}
               {/*</p>*/}
               <p className="font14 textColorGrey line20 mb12">
-                e-mail：bnt@bntfloorcare.com
+                E-mail：bnt@bntfloorcare.com
               </p>
               <p className="font14 textColorGrey line20">
-                NanTong Factory：Nantong BangNaTe Cleaning Machine Co.，Ltd.
+                NanTong Factory：Nantong Bennett Cleaning Machine Co.，Ltd.
               </p>
               <p className="font14 textColorGrey line20">
                 Address：North promoter zone，Nantong coastal zone
@@ -88,9 +88,7 @@ export default class Contract extends React.Component {
               <p className="logoTextEn">
                 Kunshan Bennett Cleaning Machine Co.,Ltd.
               </p>
-              <p className="logoTel">
-                National Service Hotline 86 0512 57473116
-              </p>
+              <p className="logoTel">Tel: 86 0512 57473116</p>
               <div className="qrcode">
                 <img src={contact02} />
               </div>

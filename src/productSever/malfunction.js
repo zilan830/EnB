@@ -458,11 +458,9 @@ export default class Malfunction extends React.Component {
         </div>
         <div className="textContent">
           <p className="title">
-            {this.props.type.slice(11)} 系列常见故障排除：
+            {this.props.type.slice(11)} Series Common Fault Analysis：
           </p>
-          <Row className="malfunction">
-            {content}
-          </Row>
+          <Row className="malfunction">{content}</Row>
         </div>
       </div>
     );

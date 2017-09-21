@@ -32,8 +32,8 @@ const navColumn = [
 const breadColumn = ["Products", "Cleaning machine "];
 
 const span = {
-  nav: 10,
-  bread: 14
+  nav: 14,
+  bread: 10
 };
 
 export default class ProductCenter extends React.Component {
@@ -206,7 +206,7 @@ export default class ProductCenter extends React.Component {
       }
       let type = "";
       const regex1 = /[\(（][\s\S]*[\)）]/; //取括号里的数据
-      const regex2 = /[\u4e00-\u9fa5]/g; //获取类型 中文
+      const regex2 = /[\u4e00-\u9fa5]/g; //获取类型
 
       dataList.map((items, indexs) => {
         let itemsContent = [];
@@ -240,7 +240,7 @@ export default class ProductCenter extends React.Component {
             itContent.push(
               <div key={`item.menu2${index}`} className="productItem">
                 <p className="productType">
-                  {item.menu2.match(regex2)} <span>{item.menu2}</span>
+                  {item.menu2.split(" ")[0]} <span>{item.menu2}</span>
                 </p>
                 <Row gutter={24} className="productItemImgRow">
                   {iContent}
