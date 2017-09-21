@@ -4,7 +4,6 @@ import com1 from "web_modules/images/com1.jpg";
 import com2 from "web_modules/images/com2.jpg";
 import com3 from "web_modules/images/com3.jpg";
 import com4 from "web_modules/images/com4.jpg";
-import evolution from "web_modules/images/evolution@4x.png";
 
 export default class Com extends React.Component {
   render() {

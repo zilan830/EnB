@@ -1,6 +1,5 @@
 import React from "react";
 import { Row, Col } from "antd";
-import evolution from "web_modules/images/evolution@4x.png";
 
 export default class Evolution extends React.Component {
   render() {
