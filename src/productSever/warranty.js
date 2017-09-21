@@ -18,22 +18,21 @@ const smartItems = [
 ];
 
 const cleverItems = [
-  ["", "电源线50英尺", "Clever510E"],
-  ["", "防溅板", "Clever510E/510B/510BT"],
-  ["", "防溅板", "Clever660BT"],
-  ["", "多楔带", "Clever510E/510B/510BT"],
-  ["", "切边V带", "Clever660BT"],
-  ["", "防溅板", "Clever660BT"],
-  ["", "手柄护套", "Clever510E/510B/510BT/660BT"],
-  ["", "后橡胶条", "Clever510E/510B/510BT"],
-  ["", "中间橡胶条", "Clever510E/510B/510BT"],
-  ["", "前橡胶条", "Clever510E/510B/510BT"],
-  ["", "中间橡胶条", "Clever660BT"],
-  ["", "前橡胶条", "Clever660BT"],
-  ["", "后橡胶条", "Clever660BT"],
-  ["", "万向轮", "Clever510E/510B/510BT/660BT"],
-  ["", "手柄护套", "Clever510E/510B/510BT/660BT"],
-  ["", "手柄护套", "Clever510E/510B/510BT/660BT"]
+  ["210201", "Splash guard", "510B&510BT"],
+  ["210541", "Splash guard", "660BT"],
+  ["210551", "Splash guard", "660BT"],
+  ["210551", "Splash guard", "510B&510BT&660BT"],
+  ["250101", "Bumper wheel", "510B&510BT&660BT"],
+  ["220061", "Drain hose", "510B&510BT&660BT"],
+  ["220081", "Suction hose", "510B&510BT&660BT"],
+  ["210461", "Bumper wheel", "510B&510BT&660BT"],
+  ["210461", "Front rubber", "510B&510BT"],
+  ["250221", "Rear rubber", "510B&510BT"],
+  ["250301", "Rear rubber", "660BT"],
+  ["250291", "Rear rubber", "660BT"],
+  ["210761", "wheel", "510B&510BT&660BT"],
+  ["220131", "escape pipe", "510B&510BT&660BT"],
+  ["220121", "Suction hose", "510B&510BT&660BT"]
 ];
 
 const dragoonItems = [
@@ -207,24 +206,46 @@ export default class Warranty extends React.Component {
           <Row className="warranty">
             <Col span={12} className="warrantyItem">
               <p className="mb20 textWeight">
-                {`昆山市贝纳特机械设备有限公司根据特定的工程要求对${text}进行制造、测试和检验，并且从以下方面确保工艺和材质无缺陷。`}
+                {`The Bennett Cleaning Machine Co., Ltd Polisher has been manufactured, tested and inspected in accordance with specific engineering requirements and is WARRANTED to be free from defects in workmanship and materials as follow`}
               </p>
-              <p>更坏零配件和免费保修一年；直流或交流电机和齿轮箱，除电机的开关、碳刷、电容器以及电气线路中的保险丝，其他的保修期一年。</p>
-              <p>更换零配件和免费保修一年：铸件和钣金件。</p>
-              <p>更换零配件和免费保修一年：除下面所列零件外的所有其他部件。</p>
-              <p className="mb50 ">
-                本保修期适用于最终用户和经销商，并且仅在用户根据昆山市贝纳特机械设备有限公司的操作和维护说明进行使用、操作和维护的情况下适用。
-              </p>
-              <p className="mb20 textWeight">本保修期不适用于以下情况：</p>
               <p>
-                本保修期不适用于由于使用不当，滥用或者疏忽所造成的人为损坏或故障。保修信用或返回零件的更换包括更换电机等取决于这些返回项目的检验。
+                One (1) year parts and labor – AC motor and gear unit, except
+                motor switches, capacitors and flex couplings which have a one
+                (1) year warranty.
               </p>
-              <p>本保修期仅限于昆山市贝纳特机械设备有限公司义务范围内的产品维修和/或替换保修期内的零配</p>
+              <p>One (1) year parts and labor – castings.</p>
+              <p>
+                One (1) year parts and labor – all other components unless
+                excluded below.
+              </p>
+              <p className="mb50 ">
+                This warranty extends to the original user/purchaser and only
+                when used, operated and maintained in accordance with Bennett
+                Cleaning Machine Co., Ltd. Operating and maintenance
+                instructions.
+              </p>
+              <p className="mb20">
+                Nor does it apply to damage or failure caused by improper use,
+                abuse or neglect. Warranty credit or replacement of return parts
+                including motors, etc., is subject to incoming inspection of
+                those items.
+              </p>
+              <p>
+                This warranty limits Bennett Cleaning Machine Co., Ltd Liability
+                to the repair of the product and/or warranted parts replacement
+                and does not include incidental or consequential damages arising
+                from the use of a Bennett Machine whether defective or not.
+              </p>
+              <p className="mb20">
+                This warranty is in lieu of all other expressed or implied
+                warranties and is extended to the original user/purchaser.
+              </p>
             </Col>
             <Col span={12} className="warrantyItem">
-              <p>件，并不包括由于使用不当管理不当引起的偶然的或间接的损坏。</p>
-              <p className="mb20 ">本保修期代替所有其他明示或暗示的保证，也适用于最终用户和分销商。</p>
-              <p className="textWeight">本保修期不适用于下列磨损件以及机械配件，其中包括：</p>
+              <p className="textWeight">
+                This warranty does not apply to the following wear parts and
+                accessories of the machine including:
+              </p>
               <table
                 className="warrantyTable"
                 style={
@@ -234,9 +255,9 @@ export default class Warranty extends React.Component {
                 }
               >
                 <tr>
-                  <th>零件号</th>
-                  <th>名称</th>
-                  <th>备注</th>
+                  <th>Part Number</th>
+                  <th>Part Name</th>
+                  <th>Comments</th>
                 </tr>
                 {tds}
               </table>
