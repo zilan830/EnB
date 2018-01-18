@@ -10,19 +10,19 @@ export default class Concept extends React.Component {
         <div className="whiteContent">
           <Row>
             <Col span={12} className="pt40">
-              <p className="title">企业理念 Enterprise Concept</p>
-              <p className="font14 line40">
-                <span className="textColorRed textWeight">经营理念：</span>
-                清洁科技，创造舒适环境
-              </p>
-              <p className="font14 line40">
-                <span className="textColorRed textWeight">核心价值观：</span>
-                致力于打造高品质的清洁产品
-              </p>
-              <p className="font14 mb30 line40">
-                <span className="textColorRed textWeight">服务宗旨：</span>
-                责任感、专业服务、合作共赢
-              </p>
+              <p className="title">Enterprise Concept</p>
+              {/*<p className="font14 line40">*/}
+              {/*<span className="textColorRed textWeight">经营理念：</span>*/}
+              {/*清洁科技，创造舒适环境*/}
+              {/*</p>*/}
+              {/*<p className="font14 line40">*/}
+              {/*<span className="textColorRed textWeight">核心价值观：</span>*/}
+              {/*致力于打造高品质的清洁产品*/}
+              {/*</p>*/}
+              {/*<p className="font14 mb30 line40">*/}
+              {/*<span className="textColorRed textWeight">服务宗旨：</span>*/}
+              {/*责任感、专业服务、合作共赢*/}
+              {/*</p>*/}
               <p className="font14 mb20">
                 <span className="textColorRed textWeight">
                   Management Concept：

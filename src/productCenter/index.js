@@ -193,13 +193,13 @@ export default class ProductCenter extends React.Component {
     if (dataList.length > 0) {
       switch (currentComponent) {
         case "1":
-          itemName = "Cleaning machine";
+          itemName = " Cleaning machine";
           break;
         case "2":
-          itemName = "Floor sweeper";
+          itemName = " Floor sweeper";
           break;
         case "3":
-          itemName = "Floor polisher";
+          itemName = " Floor polisher";
           break;
         default:
           break;
@@ -215,6 +215,16 @@ export default class ProductCenter extends React.Component {
         if (items.hasOwnProperty("child1")) {
           items.child1.map((item, index) => {
             let iContent = [];
+            let menuName = "";
+            if (item.menu2.indexOf("Small") !== -1) {
+              menuName = "Small";
+            } else if (item.menu2.indexOf("Medium") !== -1) {
+              menuName = "Medium";
+            } else if (item.menu2.indexOf("Multifunctional") !== -1) {
+              menuName = "Multifunctional";
+            } else if (item.menu2.indexOf("Large") !== -1) {
+              menuName = "Large";
+            }
             if (item.hasOwnProperty("child2")) {
               iContent = item.child2.map((i, ind) => {
                 goodsRange = i.goodsRange;
@@ -240,7 +250,7 @@ export default class ProductCenter extends React.Component {
             itContent.push(
               <div key={`item.menu2${index}`} className="productItem">
                 <p className="productType">
-                  {item.menu2.split(" ")[0]} <span>{item.menu2}</span>
+                  {menuName} <span>{item.menu2}</span>
                 </p>
                 <Row gutter={24} className="productItemImgRow">
                   {iContent}

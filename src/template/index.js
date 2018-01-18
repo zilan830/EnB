@@ -114,7 +114,9 @@ class Template extends React.Component {
   }
 
   onLanguageChange = () => {
-    window.location.href = "http://www.bntfloorcare.com";
+    const url = window.location.href;
+    const newUrl = url.replace(/english/, "www").match(/(\S*)com/)[0];
+    window.location.href = newUrl;
   };
 
   render() {

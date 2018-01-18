@@ -130,7 +130,7 @@ export default class News extends React.Component {
             </Col>
             <Col
               span={12}
-              className="mt10"
+              className="mt10 newsImgCar"
               style={{ paddingTop: "45px", height: "100%" }}
             >
               {imgContent}

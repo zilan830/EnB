@@ -25,6 +25,13 @@
   }
 }
 
+//走马灯
+.newsImgCar{
+  .ant-carousel{
+    width: 506px;
+  }
+}
+
 //图片箭头
 .publicImg {
   position: relative;
@@ -470,12 +477,13 @@
           }
           .productItemImgRow {
             margin-top: 30px;
-            margin-bottom: 70px;
+            margin-bottom: 45px;
             .productItemImgCon {
               overflow: hidden;
               border: 1px solid @borderColor1;
               width: 100%;
               height: 216px;
+              margin-bottom: 25px;
               .productItemImg {
                 display: table-cell;
                 text-align: center;
@@ -534,17 +542,16 @@
       .ant-tabs-bar {
         border-left: none;
         .ant-tabs-tab-prev, .ant-tabs-tab-next {
-          border-left: 3px solid #F7F8F8;
+          border-left: 4px solid #F7F8F8;
         }
         .ant-tabs-tab-prev-icon, .ant-tabs-tab-next-icon {
-          top: 0;
           margin-top: 0;
           width: 100%;
           display: block;
         }
         .ant-tabs-tab {
           margin-bottom: 0;
-          border-left: 3px solid #F7F8F8;
+          border-left: 4px solid #F7F8F8;
         }
       }
     }
@@ -720,10 +727,10 @@
       .warrantyItem {
         &:first-child {
           padding-right: 30px;
+          border-right: 1px dashed @borderColor;
         }
         &:last-child {
           padding-left: 30px;
-          border-left: 1px dashed @borderColor;
         }
       }
       .warrantyTable {
@@ -1132,9 +1139,6 @@
         text-indent: 9px;
         font-size: 15px;
         color: @wordColor;
-        &:last-child {
-          border-bottom: none;
-        }
         > span {
           &:last-child {
             margin-left: 20px;
@@ -1501,7 +1505,7 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: "Microsoft YaHei", "黑体", -apple-system, "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+  font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
   vertical-align: baseline;
   -webkit-font-smoothing: antialiased;
 }
@@ -1573,4 +1577,11 @@ a {
   }
 }
 
+.ant-carousel .slick-dots li.slick-active button{
+  background: #000;
+}
+
+.ant-carousel .slick-dots li button{
+  background: #000;
+}
 

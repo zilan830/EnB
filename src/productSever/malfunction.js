@@ -6,34 +6,39 @@ import guzhang from "web_modules/images/guzhang.jpg";
 const smartItems = [
   [
     {
-      title: "1、喷洒到毛刷上的水不足",
-      content: ["(1)水阀是否打开。", "(2)溶液箱有没有水。"]
+      title: "1.INSUFFICIENT WATER ONTO THE BRUSH",
+      content: [
+        "(1)Make sure the water valve is open.",
+        "(2)Confirm there is water in the solution tank."
+      ]
     },
     {
-      title: "2、洗涤效果不佳",
-      content: ["检查刷子的磨损状况，当刷毛长度小于15mm时应予更换。"]
-    }
-  ],
-  [
-    {
-      title: "3、吸水扒不能完全吸干地面",
+      title: "2.THE MACHINE DOES NOT CLEAN SATISFACTORILY",
       content: [
-        "(1)检查橡胶条是否干净。",
-        "(2)调整吸水扒的倾斜度。",
-        "(3)真空管的安装是否正确",
-        "(4)拆下整个真空系统总成并予以清洗。",
-        "(5)如橡胶条磨损严重则换之。",
-        "(6)检查真空电机是否打开。",
-        "(7)调整吸水扒高度。"
+        "Check the condition of the brush and replace it if necessary.The brush should be replace when the bristles reach about 15mm."
       ]
     }
   ],
   [
     {
-      title: "4、产生了过多泡沫",
+      title: "3.THE SQUEEGEE DOES NOT DRY THE FLOOR WELL",
       content: [
-        "(1)是否使用了低泡清洗剂，如有需要，往污液箱内加入少量的抗泡剂。",
-        "(2)地面不太脏导致过多泡沫的产生，此时应该减少清洁剂的使用量。"
+        "(1)Check that the squeegee rubber are clean.",
+        "(2)Adjust the inclination of the squeegee.",
+        "(3)Confirm the vacuum hose is correctly fitted in its housing on the recovery tank.",
+        "(4)Take off the entire vacuum assembly and clean it.",
+        "(5)Replace the blades if worn.",
+        "(6)Check that the vaccum motor switch is on.",
+        "(7)Check the squeegee height adjustment."
+      ]
+    }
+  ],
+  [
+    {
+      title: "4.EXCESSIVE FOAM PRODUCTION",
+      content: [
+        "(1)Gheck that a low detergent has been used.If required,add a small quantity of cmtifoam liquid into the  recovery tank.",
+        "(2)Remember that more foam is generated when the floor is not very dirty.Use less detergent if this is the case."
       ]
     }
   ]
@@ -42,34 +47,40 @@ const smartItems = [
 const cleverItems = [
   [
     {
-      title: "1、喷洒到毛刷上的水不足",
-      content: ["(1)水阀是否打开。", "(2)溶液箱有没有水。", "(3)电磁阀是否打开。"]
+      title: "1.INSUFFICIENT WATER ONTO THE BRUSH",
+      content: [
+        "(1)Make sure the water valve is open.",
+        "(2)Confirm there is water in the solution tank.",
+        "(3)Turn on the switch of Solenoid valve."
+      ]
     },
     {
-      title: "2、洗地效果不佳",
-      content: ["检查刷子的磨损状况，当刷毛长度小于15mm时应予更换。"]
-    }
-  ],
-  [
-    {
-      title: "3、吸水扒不能完全吸干地面",
+      title: "2.THE MACHINE DOES NOT CLEAN SATISFACTORILY",
       content: [
-        "(1)检查橡胶条是否干净。",
-        "(2)调整吸水扒倾斜度。",
-        "(3)真空管安装是否正确。",
-        "(4)拆下整个真空系统总成并予以清洗。",
-        "(5)如橡胶条磨损严重则更换之。",
-        "(6)检查真空电机是否打开。",
-        "(7)调整吸水扒高度。"
+        "Check the condition of the brush and replace it if necessary.The brush should be replace when the bristles reach about 15mm."
       ]
     }
   ],
   [
     {
-      title: "4、产生过多泡沫",
+      title: "3.THE SQUEEGEE DOES NOT DRY THE FLOOR WELL",
       content: [
-        "(1)是否使用了低泡清洁剂，如有需要，往污液箱内加入少量的抗泡剂。",
-        "(2)地面不太脏导致过多泡沫的产生，此时应减少清洁剂的使用量。"
+        "(1)Check that the squeegee rubber are clean.",
+        "(2)Adjust the inclination of the squeegee.",
+        "(3)Confirm the vacuum hose is correctly fitted in its housing on the recovery tank.",
+        "(4)Take off the entire vacuum assembly and clean it.",
+        "(5)Replace the rubber if worn.",
+        "(6)Check that the vaccum motor switch is on.",
+        "(7)Check the squeegee height adjustment."
+      ]
+    }
+  ],
+  [
+    {
+      title: "4.EXCESSIVE FOAM PRODUCTION",
+      content: [
+        "(1)Check that a low detergent has been used.If required,add a small quantity of antifoam liquid into the recovery tank.",
+        "(2)Remember that more foam is generated when the floor is not very dirty.Use less detergent if the case appear."
       ]
     }
   ]
@@ -78,66 +89,81 @@ const cleverItems = [
 const rangerItems = [
   [
     {
-      title: "1、机器不能启动",
-      content: ["(1)确保机器连接器已经连接到蓄电池连接器", "(2)检查钥匙开关处于“开”位置。", "(3)检查蓄电池是否有电。"]
-    },
-    {
-      title: "2、刷盘上供水不足",
+      title: "1.THE MACHINE DOES NOT START",
       content: [
-        "(1)检查溶液箱是否有水",
-        "(2)检查水阀是否已经打开。",
-        "(3)请立即器前部的溶液箱过滤器",
-        "(4)检查电磁阀是否正常。"
+        "(1)Make sure the machine connector is connected to the battery connector.",
+        "(2)Check the key switch is the &#34On&#34 position.",
+        "(3)Check that batteries are charged."
       ]
     },
     {
-      title: "3、吸水扒吸水效果不理想",
+      title: "2.INSUFFICIENT WATER ON THE BRUSHES",
       content: [
-        "(1)检查吸水扒是否清洁，必要时请清理。",
-        "(2)检查吸水扒的调节。",
-        "(3)清理全部的吸水部件。",
-        "(4)如果挂条已经磨损，请更换之。"
+        "(1)Check there is water in the solution tank.",
+        "(2)Check that the water tap is turned on.",
+        "(3)Clean the solution filter located at the front of the machine.",
+        "(4)Check that the solenoid valve is working properly."
+      ]
+    },
+    {
+      title: "3.THE SQUEEGEE DOES NOT DRY PERFECTLY",
+      content: [
+        "(1)Check the squeegee is clean, if necessary, clean it.",
+        "(2)Check the regulation of the squeegee.",
+        "(3)Clean the entire suction unit.",
+        "(4)Replace the rubbers, if worn."
+      ]
+    },
+    {
+      title: "4.THE MACHINE DOES NOT CLEAN WELL",
+      content: [
+        "(1)Check the state of wear and tear of the brushes and, if necessary, replace them.The brushes should be changed when the bristles are about 15mm	long.To replace them，Working with over-worn brushes may cause damage to the floor.",
+        "(2)Use a different kind of brush to the one fitted as standard.For cleaning floors where the dirt is particularly resistant, we recommend the use of special brushes supplied upon request and according to needs."
       ]
     }
   ],
   [
     {
-      title: "4、机器的清洗效果不理想",
+      title: "5.EXCESSIVE FOAM PRODUCTION",
       content: [
-        "(1)检查毛刷的磨损状态，必要时请将其更换之，当毛刷长度小于15mm时英语更换，使用过度磨损的毛刷可能会损坏地板。",
-        "(2)使用与标配不同类型的毛刷，若要清洗有顽固污渍的地板，推荐使用根据需求并按照要求提供的专用毛刷。"
+        "(1)Verify that a low foam detergent has been used.If necessary, add a small quantity of antifoam liquid to	the recovery tank.",
+        "(2)Remember that, when the floor is not very dirty, more foam is generated.In this case the detergent solution should be more diluted."
       ]
     },
     {
-      title: "5、产生过多的泡沫",
+      title: "6.THE VACUUM MOTOR DOES NOT FUNCTION",
       content: [
-        "(1)请核实使用的清洁剂为低泡清洁剂。必要时请在回收箱里面加入少量液体防泡剂。",
-        "(2)请记住在地板不太脏时会产生更多的泡沫，在在这种情况下应该进一步稀释清洁剂溶液。"
+        "(1)Check whether the recovery tank is full and, if necessary, empty it.",
+        "(2)Check the float switch (1)on the suction cap.",
+        "(3)Check whether the suction hose and squeegee nozzle have been clogged up, if necessary, clean them."
       ]
     },
     {
-      title: "6、真空电机功能丧失",
+      title: "7.THE BRUSH MOTOR DOES NOT WORK",
       content: [
-        "(1)检查回收箱是否已经加满，如有必要，清空之。",
-        "(2)操作者必须坐在正确的驾驶位置上。",
-        "(3)检查没有过热的保护装置启动。",
-        "(4)检查电机是否正确连接至脚踏板下面的电源线接线端子。"
+        "WARNING: To avoid damaging the floor, the motor only starts up when the machine is moved forwards.",
+        "(1)Check that the base is lowered during the forward movement with the	right lever turned clockwise.",
+        "(2)Check that the base is lowered during the forward movement with the	right lever turned clockwise.",
+        "(3)Check no thermal protection device has intervened.",
+        "(4)Check the correct connection of the motor to the terminal of power supply	under the footboards."
       ]
     }
   ],
   [
     {
-      title: "7、保险丝和过热保护",
+      title: "8.ELECTRIC FUSES AND THERMAL CUT-OUTS",
       content: [
-        "改进其除了安装有80A的总保险丝以外，还在电器系统中装有可恢复保险丝，当机器超过额定负载运行时能够切断毛刷和抽吸电机的电源，要恢复电机的电源时，请关闭机器并等待保险丝冷却（大约60秒），然后按下保险丝的按钮，使其复位。如果保险丝再次断开，请联系贝纳特技术服务中心。"
+        "In addition to general 80A fuses, the machine is also fitted with restorable	 safety  fuses in the electric system that interrupt the power supply to the brush and suction motors when the machine exceeds the predetermined load.To restore the power supply to the motor, switch off the machine and wait for the fuses to cool down (about 60 seconds), then push the button of the fuse to retore it.If the fuse disconnects the current again, contact the BENNETT technical service centre.",
+        "ATTENTION: The restorable safety fuses located on the electric components support below the driver’s seat.Unscrew all the screws, then remove the plastic washers and the cover , you can find them."
       ]
     },
     {
-      title: "8、机器不能后退",
+      title: "9.THE MACHINE DOES NOT REVERSE",
       content: [
-        "(1)检查是否在后退期间已经提起吸水扒。",
-        "(2)操作者必须坐在争取的驾驶位置上。",
-        "(3)检查没有过热保护装置启动。"
+        "WARNING: To avoid damage to the squeegee, the reverse movement is disabled and only works when the squeegee is lifted.",
+        "(1)Check that the squeegee is lifted during the reverse movement with the left lever (1) turned clockwise.",
+        "(2)The operator must be properly seated in the driving position.",
+        "(3) Check no thermal protection device has intervened."
       ]
     }
   ]
@@ -146,66 +172,81 @@ const rangerItems = [
 const hussarItems = [
   [
     {
-      title: "1、机器不能启动",
-      content: ["(1)确保机器连接器已经连接到蓄电池连接器", "(2)检查钥匙开关处于“开”位置。", "(3)检查蓄电池是否有电。"]
-    },
-    {
-      title: "2、刷盘上供水不足",
+      title: "1.THE MACHINE DOES NOT START",
       content: [
-        "(1)检查溶液箱是否有水",
-        "(2)检查水阀是否已经打开",
-        "(3)清理机器前部的溶液过滤器。",
-        "(4)检查电磁阀是否正常。"
+        "(1)Make sure the machine connector is connected to the battery connector.",
+        "(2)Check the key switch is the &#34On&#34 position.",
+        "(3)Check that batteries are charged."
       ]
     },
     {
-      title: "3、吸水扒吸水效果不理想",
+      title: "2.INSUFFICIENT WATER ON THE BRUSHES",
       content: [
-        "(1)检查吸水扒是否清洁，必要时请清理。",
-        "(2)检查吸水扒的调节。",
-        "(3)清理全部的吸水部件。",
-        "(4)如果刮条已经磨损，请更换之。"
+        "(1)Check there is water in the solution tank.",
+        "(2)Check that the water tap is turned on.",
+        "(3)Clean the solution filter located at the front of the machine.",
+        "(4)Check that the solenoid valve is working properly."
+      ]
+    },
+    {
+      title: "3.THE SQUEEGEE DOES NOT DRY PERFECTLY",
+      content: [
+        "(1)Check the squeegee is clean, if necessary, clean it.",
+        "(2)Check the regulation of the squeegee.",
+        "(3)Clean the entire suction unit.",
+        "(4)Replace the rubbers, if worn."
+      ]
+    },
+    {
+      title: "4.THE MACHINE DOES NOT CLEAN WELL",
+      content: [
+        "(1)Check the state of wear and tear of the brushes and, if necessary, replace them.The brushes should be changed when the bristles are about 15mm	long.To replace them，Working with over-worn brushes may cause damage to the floor.",
+        "(2)Use a different kind of brush to the one fitted as standard.For cleaning floors where the dirt is particularly resistant, we recommend the use of special brushes supplied upon request and according to needs."
       ]
     }
   ],
   [
     {
-      title: "4、机器清洗效果不理想",
+      title: "5.EXCESSIVE FOAM PRODUCTION",
       content: [
-        "(1)检查毛刷的磨损状态，必要时请将其更换，当毛刷长度小于15mm时应予更换。使用过度磨损的毛刷可能会损坏地板。",
-        "(2)使用与标配不同类型的毛刷，若要清洗有顽固污渍的地板，推荐使用根据需求并按照要求提供专用毛刷。"
+        "(1)Verify that a low foam detergent has been used.If necessary, add a small quantity of antifoam liquid to	the recovery tank.",
+        "(2)Remember that, when the floor is not very dirty, more foam is generated.In this case the detergent solution should be more diluted."
       ]
     },
     {
-      title: "5、产生过多泡沫",
+      title: "6.THE VACUUM MOTOR DOES NOT FUNCTION",
       content: [
-        "(1)请核实使用的清洁剂为低泡清洁剂。必要时请在回收箱里面加入少量液体防泡剂。",
-        "(2)请记住在地板不太脏是会产生更多的泡沫，在这种情况下，应该进一步稀释清洁剂溶液。"
+        "(1)Check whether the recovery tank is full and, if necessary, empty it.",
+        "(2)Check the float switch (1)on the suction cap.",
+        "(3)Check whether the suction hose and squeegee nozzle have been clogged up, if necessary, clean them."
       ]
     },
     {
-      title: "6、毛刷电机不工作",
+      title: "7.THE BRUSH MOTOR DOES NOT WORK",
       content: [
-        "(1)检查前进时是否已经放下毛刷基座。",
-        "(2)操作者必须坐在正确驾驶位置上。",
-        "(3)检查没有过热的保护装置启动。",
-        "(4)检查电机是否正确连接至脚踏板下的电源线接线端子。"
+        "WARNING: To avoid damaging the floor, the motor only starts up when the machine is moved forwards.",
+        "(1)Check that the base is lowered during the forward movement with the	right lever turned clockwise.",
+        "(2)Check that the base is lowered during the forward movement with the	right lever turned clockwise.",
+        "(3)Check no thermal protection device has intervened.",
+        "(4)Check the correct connection of the motor to the terminal of power supply	under the footboards."
       ]
     }
   ],
   [
     {
-      title: "7、保险丝和过热保护",
+      title: "8.ELECTRIC FUSES AND THERMAL CUT-OUTS",
       content: [
-        "该机器除了有安装有80A的总保险丝以外,还在电器系统中装有可恢复的保险丝，当机器超过额定负载运行时能够切断毛刷和抽吸电机的电源。要恢复电机的电源时，请关闭机器并等待保险丝冷却（大约60秒），然后按下保险丝的按钮使其复位。如果保险丝再次断开，请联系贝纳特技术服务中心。"
+        "In addition to general 80A fuses, the machine is also fitted with restorable	 safety  fuses in the electric system that interrupt the power supply to the brush and suction motors when the machine exceeds the predetermined load.To restore the power supply to the motor, switch off the machine and wait for the fuses to cool down (about 60 seconds), then push the button of the fuse to retore it.If the fuse disconnects the current again, contact the BENNETT technical service centre.",
+        "ATTENTION: The restorable safety fuses located on the electric components support below the driver’s seat.Unscrew all the screws, then remove the plastic washers and the cover , you can find them."
       ]
     },
     {
-      title: "8、机器不能后退",
+      title: "9.THE MACHINE DOES NOT REVERSE",
       content: [
-        "(1)检查是否在后退期间已经提起吸水扒。",
-        "(2)操作者必须坐在正确的驾驶位置上。",
-        "(3)检查没有过热保护装置启动。"
+        "WARNING: To avoid damage to the squeegee, the reverse movement is disabled and only works when the squeegee is lifted.",
+        "(1)Check that the squeegee is lifted during the reverse movement with the left lever (1) turned clockwise.",
+        "(2)The operator must be properly seated in the driving position.",
+        "(3) Check no thermal protection device has intervened."
       ]
     }
   ]
@@ -214,73 +255,81 @@ const hussarItems = [
 const dragoonItems = [
   [
     {
-      title: "1、机器不能启动",
-      content: ["(1)确保机器连接器已经连接到蓄电池连接器。", "(2)检查钥匙开关处于“开”的位置。", "(3)检查蓄电池是否有电。"]
-    },
-    {
-      title: "2、刷盘上供水不足",
+      title: "1.THE MACHINE DOES NOT START",
       content: [
-        "(1)检查溶液箱是否有水",
-        "(2)检查水阀是否打开",
-        "(3)清理机器前部的溶液过滤器。",
-        "(4)检查电磁阀是否正常工作。"
+        "(1)Make sure the machine connector is connected to the battery connector.",
+        "(2)Check the key switch is the &#34On&#34 position.",
+        "(3)Check that batteries are charged."
       ]
     },
     {
-      title: "3、吸水扒吸水效果不理想",
+      title: "2.INSUFFICIENT WATER ON THE BRUSHES",
       content: [
-        "(1)检查吸水扒是否清洁，必要时请清理。",
-        "(2)检查吸水扒的调节",
-        "(3)清理全部的吸水部件。",
-        "(4)如果刮条已经磨损，请及时更换。"
+        "(1)Check there is water in the solution tank.",
+        "(2)Check that the water tap is turned on.",
+        "(3)Clean the solution filter located at the front of the machine.",
+        "(4)Check that the solenoid valve is working properly."
       ]
     },
     {
-      title: "4、机器的清洗效果不理想",
+      title: "3.THE SQUEEGEE DOES NOT DRY PERFECTLY",
       content: [
-        "(1)检查毛刷的磨损状态，必要时请将其更换。当毛刷只有大约15mm长时就应更换毛刷，使用过度磨损的毛刷可能会损坏地板。",
-        "(2)使用与标配不同类型的毛刷。若要清洗油顽固污渍的地板，推荐使用根据需要并按照要求提供的专用毛刷。"
-      ]
-    }
-  ],
-  [
-    {
-      title: "5、产生过多的泡沫",
-      content: [
-        "(1)请核实使用的清洁剂为低泡清洁剂，必要时请在回收箱里加入少量的液体防泡剂。",
-        "(2)请记住在地板不太脏时会产生更多泡沫，在这种情况下应进一步稀释清洁剂溶液。"
+        "(1)Check the squeegee is clean, if necessary, clean it.",
+        "(2)Check the regulation of the squeegee.",
+        "(3)Clean the entire suction unit.",
+        "(4)Replace the rubbers, if worn."
       ]
     },
     {
-      title: "6、真空电机功能丧失",
-      content: ["(1)检查回收箱是否已满，如果必要，清空它。", "(2)检查真空盖上的浮空开关。"]
-    },
-    {
-      title: "7、毛刷电机不工作",
+      title: "4.THE MACHINE DOES NOT CLEAN WELL",
       content: [
-        "警告：为防止损坏地板，只有当机器前进时毛刷电机才能正常运行。",
-        "(1)检查前进时是否已经放下毛刷基座。",
-        "(2)操作者必须坐在正确的驾驶位置上.",
-        "(3)检查没有过热保护装置启动",
-        "(4)检查电机是否正确连接至脚踏板下的电源接线端子。"
-      ]
-    },
-    {
-      title: "8、保险丝和过热保护装置",
-      content: [
-        "该机器除安装有80A的总保险丝外，还在电气系统中安装了可恢复保险丝，当机器超过耳钉负载运行时能够切断毛刷和吸水电机的电源，要回复电机的电源时，请关掉机器并等待保险丝冷却（大约60秒），然后按下保险丝的按钮使其复位。如果保险丝再次断开，请联系贝纳特技术服务中心。",
-        "注意：抓住拉手打开储物室的拉门，可恢复保险丝安装在储物室的顶部。"
+        "(1)Check the state of wear and tear of the brushes and, if necessary, replace them.The brushes should be changed when the bristles are about 15mm	long.To replace them，Working with over-worn brushes may cause damage to the floor.",
+        "(2)Use a different kind of brush to the one fitted as standard.For cleaning floors where the dirt is particularly resistant, we recommend the use of special brushes supplied upon request and according to needs."
       ]
     }
   ],
   [
     {
-      title: "9、机器不能后退",
+      title: "5.EXCESSIVE FOAM PRODUCTION",
       content: [
-        "警告：为了防止损坏吸水扒，只有提起吸水扒时后退功能才能正常工作。",
-        "(1)检查是否在后退期间已经提起吸水扒",
-        "(2)操作者必须坐在正确的驾驶位置上。",
-        "(3)检查没有过热保护装置启动。"
+        "(1)Verify that a low foam detergent has been used.If necessary, add a small quantity of antifoam liquid to	the recovery tank.",
+        "(2)Remember that, when the floor is not very dirty, more foam is generated.In this case the detergent solution should be more diluted."
+      ]
+    },
+    {
+      title: "6.THE VACUUM MOTOR DOES NOT FUNCTION",
+      content: [
+        "(1)Check whether the recovery tank is full and, if necessary, empty it.",
+        "(2)Check the float switch (1)on the suction cap.",
+        "(3)Check whether the suction hose and squeegee nozzle have been clogged up, if necessary, clean them."
+      ]
+    },
+    {
+      title: "7.THE BRUSH MOTOR DOES NOT WORK",
+      content: [
+        "WARNING: To avoid damaging the floor, the motor only starts up when the machine is moved forwards.",
+        "(1)Check that the base is lowered during the forward movement with the	right lever turned clockwise.",
+        "(2)Check that the base is lowered during the forward movement with the	right lever turned clockwise.",
+        "(3)Check no thermal protection device has intervened.",
+        "(4)Check the correct connection of the motor to the terminal of power supply	under the footboards."
+      ]
+    }
+  ],
+  [
+    {
+      title: "8.ELECTRIC FUSES AND THERMAL CUT-OUTS",
+      content: [
+        "In addition to general 80A fuses, the machine is also fitted with restorable	 safety  fuses in the electric system that interrupt the power supply to the brush and suction motors when the machine exceeds the predetermined load.To restore the power supply to the motor, switch off the machine and wait for the fuses to cool down (about 60 seconds), then push the button of the fuse to retore it.If the fuse disconnects the current again, contact the BENNETT technical service centre.",
+        "ATTENTION: The restorable safety fuses located on the electric components support below the driver’s seat.Unscrew all the screws, then remove the plastic washers and the cover , you can find them."
+      ]
+    },
+    {
+      title: "9.THE MACHINE DOES NOT REVERSE",
+      content: [
+        "WARNING: To avoid damage to the squeegee, the reverse movement is disabled and only works when the squeegee is lifted.",
+        "(1)Check that the squeegee is lifted during the reverse movement with the left lever (1) turned clockwise.",
+        "(2)The operator must be properly seated in the driving position.",
+        "(3) Check no thermal protection device has intervened."
       ]
     }
   ]
@@ -289,40 +338,51 @@ const dragoonItems = [
 const tornadoItems = [
   [
     {
-      title: "1、机器不能启动",
-      content: ["(1)确保机器连接器已连接到蓄电池连接器。", "(2)检查钥匙开关处于“开”位置。", "(3)检查蓄电池是否有电"]
+      title: "1.THE MACHINE DOES NOT START",
+      content: [
+        "(1)Make sure the machine connector is connected to the battery connector.",
+        "(2)Check the key switch is the &#34On&#34 position.",
+        "(3)Check that batteries are charged."
+      ]
     },
     {
-      title: "2、工作期间扬尘",
+      title: "2.THE MACHINE LIFTS DUST DURING OPERATION",
       content: [
-        "(1)确保有效抽吸作用的橡胶挡板严重磨损，必要时请更换。",
-        "(2)过滤器阻塞，彻底清理过滤器。",
-        "(3)垃圾斗错位，重新安装。"
+        "(1)THE MACHINE LIFTS DUST DURING OPERATION.",
+        "(2)The filter is blocked: clean the filter thoroughly.",
+        "(3)The hopper position is not correct, reassemble it."
       ]
     }
   ],
   [
     {
-      title: "3、清扫效果不理想",
+      title: "3.THE MACHINE DOES NOT CLEAN WELL",
       content: [
-        "(1)检查毛刷的磨损状态，必要时请将其更换，当毛刷磨损超过25mm时就应该更换.使用过度的毛刷可能会损坏地板。",
-        "(2)使用与标配不同类型的毛刷，若要清扫有顽固污渍的地板，推荐使用根据需求并按照要求提供的专用毛刷。",
-        "(3)边刷磨损了。",
-        "(4)垃圾斗已满，请彻底清空。"
+        "(1) Check the state of wear and tear of the brushes, if necessary, replace them.The brushes should be changed when the bristles are worn more than 30mm.To replace them, Working with over-worn brushes may cause damage to the floor.",
+        "(2)Use a different kind of brush to the one fitted as standard.For cleaning	floors where the dirt is particularly resistant, we recommend the use of special brushes supplied upon request and according to needs.",
+        "(3)The side brush is worn, adjust it.",
+        "(4)The hopper is full, empty it completely."
       ]
     },
     {
-      title: "4、滚刷噪音过大或变化",
-      content: ["(1)刷子上缠绕杂物，应及时清理。"]
+      title: "4.EXCESSIVE OR ALTERED NOISE OF THE CENTRAL BRUSH",
+      content: [
+        "WARNING: To avoid damaging the floor, the motor only starts up when the machine is moved forwards and backwards.",
+        "(1)Material wrapped around the brush: remove it."
+      ]
+    },
+    {
+      title: "5.EXCESSIVE OR ALTERED NOISE OF THE SIDE BRUSH",
+      content: ["(1)Material wrapped around the brush: remove it."]
     }
   ],
   [
     {
-      title: "5、保险丝和过热保护",
+      title: "6.ELECTRIC FUSES AND THERMAL CUT-OUTS",
       content: [
-        "该机器除了有安装有80A的总保险丝以外，还在电器系统中装有可恢复保险丝，当机器超过额定负载运行时能够切断毛刷和抽吸电机的电源。要恢复电机的电源时，请关闭机器并等待保险丝冷却（大约60秒），然后按下保险的按钮使其复位，如果保险丝再次断开，请联系贝纳特技术服务中心。",
-        "(1)抓住拉手打开储物室的拉门，可恢复保险丝安装在储物室的顶部。",
-        "(2)专注座椅箱的后部并举起座椅箱知道固定安全托架的末端，可恢复保险丝安装在电池组的右侧。"
+        "In addition to general 80A fuses, the machine is also fitted with restorable	 safety fuses in the electric system that interrupt the power supply to the brush and suction motors when the machine exceeds the predetermined load.To restore the power supply to the motor, switch off the machine and wait for the fuses to cool down (about 60 seconds), then push the button of the fuse to retore it.If the fuse disconnects the current again, contact the BENNETT technical service centre.",
+        "(1)Grip the handle to open the storage compartment door, the restorable safety fuses located on the roof of storage compartment.",
+        "(2)Grip the rear part of the seat tank and lift the seat tank until it hooks to	its safety clamp, the restorable safety fuses located on the right side of the batteries."
       ]
     }
   ]
@@ -331,19 +391,19 @@ const tornadoItems = [
 const pxspxItems = [
   [
     {
-      title: "1、设备使用时出现抖动现象",
+      title: "1.The phenomenon of jitter in equipment use",
       content: [
-        "(1)使用地面凹凸不平，导致设备使用时抖动；建议客户将设备使用于相对平整的地面，以免由于阻力过大而损伤电机。",
-        "(2)洗地刷刷毛弯曲，导致设备使用时抖动；建议客户将使用后的洗地刷卸掉，以免长时间受设备挤压导致刷毛变形。"
+        "(1)The use of the machine will shake when the ground is uneven；It is recommended that customers use the equipment on a flat surface to avoid damage to the motor.",
+        "(2)The bristles of the brush bend, causing the equipment to to shake when used; It is suggested that the client will remove the brush after use to avoid long time being extruded by the equipment causing the bristles to deform."
       ]
     }
   ],
   [
     {
-      title: "2、设备使用一段时间后出现跳闸",
+      title: "2.A trip occurs after a period of use",
       content: [
-        "(1)检测发现运行电容损坏导致设备跳闸；建议使用人员清洗设备外层时，不能直接用水冲洗否则容易使运行电容进水后导致设备出现故障，应用布擦拭干净即可。",
-        "(2)电源线接触不良导致设备跳闸，建议设备使用时将电源线挂于使用人的肩膀处，以免由于拉扯电源线而使电源线与设备连接处接触不良"
+        "(1)Operation of capacitor damage to cause the device to tripping; It is suggested that when cleaning the outer layer of the equipment, the staff can not wash directly with water or cause the equipment to fail after the running capacitor is flooded.Just wipe it with a cloth.",
+        "(2)Poor contact of power cord leads to equipment trip;It is suggested that the power line be hung on the shoulder of the user when the device is used, so as not to cause the power cord to be in contact with the equipment connection due to the pulling of the power cord."
       ]
     }
   ]

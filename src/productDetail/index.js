@@ -83,10 +83,10 @@ export default class ProductDetail extends React.Component {
     this.state = {
       currentComponent: "1",
       navColumn,
-      ind: 0,
       tableList: [],
       dataList: []
     };
+    this.ind = 0;
   }
 
   componentDidMount() {
@@ -103,9 +103,7 @@ export default class ProductDetail extends React.Component {
     } else {
       this.renderSelect(2, type);
     }
-    this.setState({
-      ind
-    });
+    this.ind = parseInt(ind);
     this.getData(type);
   }
 
@@ -149,6 +147,7 @@ export default class ProductDetail extends React.Component {
   };
 
   onClick = component => {
+    this.ind = 0;
     this.setState({
       currentComponent: component
     });
@@ -156,8 +155,8 @@ export default class ProductDetail extends React.Component {
   };
 
   getTable = () => {
-    const { dataList, ind } = this.state;
-    const index = parseInt(ind);
+    const { dataList } = this.state;
+    const index = parseInt(this.ind);
     const goodsId = dataList[index].gid;
     baseReq(`/goods/reference/${goodsId}`)
       .then(res => {
@@ -171,14 +170,13 @@ export default class ProductDetail extends React.Component {
   };
 
   handleImg = key => {
-    this.setState({
-      ind: key
-    });
+    this.ind = parseInt(key);
     this.getTable();
   };
 
   render() {
-    const { dataList, tableList, ind } = this.state;
+    const { dataList, tableList } = this.state;
+    const ind = this.ind;
     let imgContent = [];
     let tableContent = [];
     let tableDetList = [];
@@ -216,7 +214,7 @@ export default class ProductDetail extends React.Component {
       });
       imgContent = (
         <Tabs
-          defaultActiveKey={ind}
+          activeKey={`${ind}`}
           tabPosition="right"
           style={{ height: 400 }}
           onChange={key => {

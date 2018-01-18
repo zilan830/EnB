@@ -9,7 +9,7 @@ export default class About extends React.Component {
         <div className="backContent">
           <p className="title">About bennett</p>
           <p className="mb20 line20 font14">
-            Kunshan Bennett Cleaning Machine CO., Ltd is a collection of
+            Kunshan Bennett Cleaning Machine Co., Ltd is a collection of
             research, production and distribution of integrated enterprise.
             Since it was founded in 2007, relying on the geographical advantage
             ,Yangtze River Economic Development Zone, Kunshan City Qiandeng
@@ -24,9 +24,9 @@ export default class About extends React.Component {
             years, has been in the leading position of the industry. Its sales
             and service categories include online communication model,
             distribution model, We Chat light application model, meanwhile sales
-            and service network covering domestic cities. AS a "right of import
+            and service network covering domestic cities. As a "right of import
             and export enterprise", its products are exported to Europe, South
-            America, Africa and other countries, and it has passed the ISO9001
+            America, Africa and other countries, and it has passed the ISO 9001
             quality system certification. The company implements the unified
             management of ERP. The rational allocation of resources laid the
             foundation for the sustainable and harmonious development of

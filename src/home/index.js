@@ -5,6 +5,7 @@ import bannerImg1 from "web_modules/images/banner1.jpg";
 import bannerImg2 from "web_modules/images/banner2.jpg";
 import bannerImg3 from "web_modules/images/banner3.jpg";
 import bannerImg4 from "web_modules/images/banner4.jpg";
+import bannerImg5 from "web_modules/images/banner5.jpg";
 import machine1 from "web_modules/images/machine1.png";
 import machine2 from "web_modules/images/machine2.png";
 import machine3 from "web_modules/images/machine3.png";
@@ -93,6 +94,9 @@ export default class Home extends React.Component {
         <div className="bannerContainer">
           <Carousel autoplay>
             <div>
+              <img src={bannerImg5} />
+            </div>
+            <div>
               <img src={bannerImg1} />
             </div>
             <div>
@@ -172,7 +176,7 @@ export default class Home extends React.Component {
                 <p className="title">About Us</p>
                 <div className="categoryInner">
                   <p className="categoryText">
-                    Kunshan Bennett Cleaning Machine CO., Ltd is a collection of
+                    Kunshan Bennett Cleaning Machine Co., Ltd is a collection of
                     research, production and distribution of integrated
                     enterprise. Since it was founded in 2007, relying……
                   </p>
@@ -186,7 +190,7 @@ export default class Home extends React.Component {
               </div>
             </Col>
             <Col span={8} className="category">
-              <p className="title">Case Center</p>
+              <p className="title">Case</p>
               {caseInfo.length > 0 ? (
                 <Link to="/cases">
                   <Row className="categoryInner">

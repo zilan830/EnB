@@ -29,8 +29,8 @@ export default class MachineChoice extends React.Component {
               enterprises. Choosing the right washing products can not only
               greatly improve the efficiency of cleaning work, but also save a
               lot of unnecessary worries and worries for us .So when we choose
-              to buy cleaning equipment must be careful,, looking for quality
-              and brand.
+              to buy cleaning equipment must be careful, looking for quality and
+              brand.
             </p>
             <p className="machineText">
               Question 1: so many styles of washing machine, which one should I
@@ -110,7 +110,7 @@ export default class MachineChoice extends React.Component {
         content = (
           <div className="textContent mt30">
             <p className="machineText">
-              If you want ti buy the floor polisher, you need to look at these
+              If you want to buy the floor polisher, you need to look at these
               several aspects of key elements, how to choose?These are questions
               that friends of wipe often want to ask, and share these knowledge
               with you today.

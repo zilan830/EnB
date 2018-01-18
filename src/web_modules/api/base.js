@@ -6,8 +6,9 @@ export default (url, data) => {
   console.log("$Purl", url);
   return axios({
     method: "post",
-    url: `http://47.92.123.27:8081${url}`
-    // url
+    // url: `http://47.92.123.27:8081${url}`,
+    url,
+    data
   })
     .then(res => {
       if (res.data.code === 10000) {

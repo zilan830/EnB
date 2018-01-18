@@ -6,7 +6,7 @@ export default class Honors extends React.Component {
     return (
       <div>
         <div className="whiteContent">
-          <p className="title">资质与荣誉 Honor Qualification</p>
+          <p className="title">Honor Qualification</p>
         </div>
         <div className="imgContainer">
           <div className="honors01" />
